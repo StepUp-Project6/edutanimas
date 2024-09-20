@@ -8,8 +8,8 @@ const PlatformP5 = () => {
   return (
     <div className="font-mulish min-h-screen flex flex-col">
       <Navbar />
-      <main className="relative w-full h-screen pt-[150px] lg:pt-[130px] xl:pt-[170px]">
-        <div className="px-10 md:px-20 xl:px-[400px]">
+      <main className="relative w-full h-screen pt-[150px] lg:pt-[130px] xl:pt-[90px]">
+        <div className="px-10 md:px-20 xl:px-[250px]">
           <h1 className="md:leading-[40px] lg:leading-[80px] xl:leading-[72px]">
             <HeadSection
               content={[
@@ -31,7 +31,7 @@ const PlatformP5 = () => {
             />
           </h1>
           <TextParagraph
-            customClassname={"text-center -mt-2 md:mt-4 xl:px-20"}
+            customClassname={"text-center -mt-2 md:mt-4 xl:px-8"}
             content="P5 Gaya Hidup Berkelanjutan adalah fitur untuk mendokumentasikan kegiatan pertanian berkelanjutan siswa. Melalui fitur ini, siswa dapat melaporkan progres mereka, sementara guru dapat memantau perkembangan secara langsung"
           />
           <a
