@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const HeadSection = ({ content = [], classname = "", width = "" }) => {
   return (
     <h1
-      className={`font-bold text-black text-center font-bricolage ${width} ${
+      className={`text-black font-bricolage ${width} ${
         classname ? classname : "text-[24px] lg:text-[64px]"
       }`}
     >
@@ -16,12 +16,12 @@ const HeadSection = ({ content = [], classname = "", width = "" }) => {
             }`}
           >
             <span className="relative z-10">{item.title}</span>
-            <span className="absolute inset-0 top-1 z-0">
+            <span className="absolute inset-0 -top-2 lg:-top-4 z-0">
               {item.highlight ? (
                 <img
                   src="svg/header-splash.svg"
                   alt=""
-                  className="w-full h-auto scale-150"
+                  className="w-full h-auto scale-x-125 lg:scale-x-150"
                 />
               ) : (
                 ""
