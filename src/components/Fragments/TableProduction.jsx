@@ -7,21 +7,21 @@ const TableProduction = ({ data }) => {
   };
 
   return (
-    <table className="w-full border-collapse border border-primary">
-      <thead className="bg-[#2FB95D] text-white text-xs">
+    <table className="w-full border-collapse border border-primary rounded-lg overflow-hidden">
+      <thead className="bg-[#2FB95D] text-white text-xs rounded-t-lg">
         <tr className="w-full">
-          <th className="w-[12%] px-2 py-1">No</th>
-          <th className="w-[42%] px-2 py-1 text-left">Jenis Tanaman</th>
-          <th className="w-[36%] px-2 py-1 text-left">
+          <th className="w-[12%] px-2 py-1 rounded-tl">No</th>
+          <th className="w-[43%] px-2 py-1 text-left">Jenis Tanaman</th>
+          <th className="w-[37%] px-2 py-1 text-left rounded-tr">
             Produksi Tanaman (Kwintal)
           </th>
         </tr>
       </thead>
       <tbody className="bg-[#EAFFF1] text-xs">
         {data.map((item, index) => (
-          <tr key={item.id} className="hover:bg-[#2FB95D]">
-            <td className=" px-2 py-1 text-center">{index + 1}</td>
-            <td className=" px-2 py-1 flex items-center space-x-2">
+          <tr key={item.id} className="hover:bg-[#67e691]">
+            <td className="px-2 py-1 text-center">{index + 1}</td>
+            <td className="px-2 py-1 flex items-center space-x-2">
               <img
                 src={item.image}
                 alt={item.title}
@@ -29,14 +29,16 @@ const TableProduction = ({ data }) => {
               />
               <span>{item.title}</span>
             </td>
-            <td className=" px-2 py-1 text-left">{item.quantity}</td>
+            <td className="px-2 py-1 text-left">{item.quantity}</td>
           </tr>
         ))}
         <tr className="font-bold">
-          <td colSpan={2} className="px-2 py-3 text-center ps-8">
+          <td colSpan={2} className="px-2 py-3 text-center ps-8 rounded-bl">
             Jumlah
           </td>
-          <td className=" px-2 py-1 text-left">{calculateTotal()}</td>
+          <td className="px-2 py-1 text-left rounded-br">
+            {calculateTotal()}
+          </td>
         </tr>
       </tbody>
     </table>
