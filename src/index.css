@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Scrollbar dengan ketebalan 1px */
+.scrollbar-thin-4px::-webkit-scrollbar {
+  width: 4px; /* untuk scroll vertical */
+  height: 4px; /* untuk scroll horizontal */
+}
+
+.scrollbar-thin-4px::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Warna untuk scrollbar */
+  border-radius: 9999px; /* Membuat scrollbar lebih halus dan bulat */
+}
