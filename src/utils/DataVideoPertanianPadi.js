@@ -48,7 +48,7 @@ export const DataVideoPertanianPadi = [
   },
   {
     id: 8,
-    title: "INTEGRATED FARMING SYSTEM : SOLUSI PERTANIAN BERKELANJUTAN",
+    title: "Integrated Farming System : Solusi Pertanian Berkelanjutan",
     image: "images/imageVideo/pertanian-padi-8.png",
     link: "https://youtu.be/4LThgnPmlw8?si=5jJbtuQUqnLQFCaE",
   },
