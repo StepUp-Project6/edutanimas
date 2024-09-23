@@ -15,13 +15,23 @@ import { DataBuah } from "../utils/DataBuah";
 
 const PotensiPertanian = () => {
   return (
-    <div className="font-mulish min-h-screen flex flex-col">
+    <div className="font-mulish min-h-screen flex flex-col scrollbar-thin-4px scrollbar-thumb-gray-400">
       <Navbar />
       <main className="w-full mt-[70px] mb-5 md:relative lg:mt-[60px] overflow-hidden">
         <img
           src="images/element-bg-5.png"
           alt="bg"
           className="hidden absolute md:top-[500px] lg:top-[610px] xl:top-[625px] w-full -z-50 md:block"
+        />
+        <img
+          src="images/element-bg-6.png"
+          alt="bg"
+          className="hidden absolute md:top-[780px] lg:top-[800px] xl:top-[800px] w-full -z-50 md:block"
+        />
+        <img
+          src="images/element-bg-6.png"
+          alt="bg"
+          className="hidden absolute md:top-[880px] lg:top-[1070px] xl:top-[950px] w-full -z-50 md:block"
         />
         <h1 className="text-center">
           <HeadSection
@@ -39,7 +49,7 @@ const PotensiPertanian = () => {
         {/* SECTION PRODUKSI HOLTIKULTURA*/}
         <section
           className="relative w-full pt-[350px] mt-14 h-[830px] md:pt-0 md:mt-6 
-        md:h-[500px] md:mb-8 lg:h-[700px]"
+        md:h-[500px] md:mb-4 lg:h-[600px]"
         >
           <img
             src="images/element-bg-3.png"
@@ -104,20 +114,20 @@ const PotensiPertanian = () => {
                 ]}
               />
             </h2>
-            <div className="md:w-full md:px-48 lg:px-52 xl:px-80">
+            <div className="md:w-full md:px-48 lg:px-52 xl:px-96">
               <TableProduction data={DataHoltikultura} />
             </div>
           </div>
         </section>
 
         {/* SECTION VIDEO BERKELANJUTAN PERTANIAN CABAI */}
-        <section className="relative w-full pt-0 mt-14 md:mt-0">
+        <section className="relative w-full pt-0 mt-14 md:mt-0 lg:mt-8">
           <img
             src="images/element-bg-4.png"
             alt="bg"
             className="absolute top-0 w-full -z-50 md:hidden"
           />
-          <h2 className="px-20 text-center leading-[16px] mb-5">
+          <h2 className="px-24 text-center leading-[16px] mb-5 md:mb-10 lg:mb-14">
             <HeadSection
               content={[
                 {
@@ -127,17 +137,17 @@ const PotensiPertanian = () => {
                 {
                   title: "Video Berkelanjutan ",
                   classname:
-                    "font-semibold text-[14px] text-black md:text-[36px] lg:text-[64px]",
+                    "font-semibold text-[14px] text-black md:text-[20px] lg:text-[32px]",
                 },
                 {
                   title: "Pertanian Cabai ",
                   classname:
-                    "text-primary font-semibold text-[14px] md:text-[36px] md:top-0 lg:text-[64px]",
+                    "text-primary font-semibold text-[14px] md:text-[20px] lg:text-[32px] md:top-0",
                 },
               ]}
             />
           </h2>
-          <div className="w-full mt-8 px-5">
+          <div className="w-full mt-8 px-5 md:w-[710px] md:ps-8 md:mx-auto md:overflow-auto lg:w-[970px] xl:w-full xl:ps-5 xl:flex xl:justify-center">
             <Pagination
               data={DataVideoPertanianCabai}
               CardComponent={CardVideo}
@@ -146,39 +156,44 @@ const PotensiPertanian = () => {
         </section>
 
         {/* SECTION PRODUKSI TANAMAN PANGAN*/}
-        <section className="relative w-full pt-[350px] mt-5">
+        <section className="relative w-full pt-[350px] mt-5 md:pt-4">
           {/* IMAGE ABSOLUTE 2 : PRODUKSI TANAMAN PANGAN */}
           <SectionImage
             images={[
               {
                 src: "images/floated/potensi-image-6.png",
-                position: "top-0 left-1 -z-10",
-                size: "w-[123px]",
+                position:
+                  "top-0 left-1 -z-10 md:-left-6 md:top-[140px] lg:-left-4 lg:top-[150px] xl:-left-8 xl:top-[175px]",
+                size: "w-[123px] lg:w-[130px] xl:w-[178px]",
               },
               {
                 src: "images/floated/potensi-image-7.png",
-                position: "top-9 right-[135px] -z-20",
-                size: "w-[65px]",
+                position:
+                  "top-9 right-[135px] -z-20  md:left-[100px] md:top-[260px] lg:left-[95px] lg:top-[300px] xl:left-[175px] xl:top-[300px]",
+                size: "w-[65px] md:w-[68px] lg:w-[80px] xl:w-[102px]",
               },
               {
                 src: "images/floated/potensi-image-8.png",
-                position: "top-16 right-[68px] -z-10",
-                size: "w-[128px] ",
+                position:
+                  "top-16 right-[68px] -z-10 md:right-[30px] md:top-[120px] lg:top-[150px] xl:top-[145px] xl:right-[60px]",
+                size: "w-[128px] md:w-[110px] xl:w-[146px]",
               },
               {
                 src: "images/floated/potensi-image-9.png",
-                position: "top-[180px] left-[36px] -z-10",
-                size: "w-[98px] ",
+                position:
+                  "top-[180px] left-[36px] -z-10 md:left-[50px] md:top-[100px] md:-z-20 lg:top-[110px] lg:left-[60px]  xl:top-[130px] xl:left-[95px]",
+                size: "w-[98px] md:w-[86px] xl:w-[106px]",
               },
               {
                 src: "images/floated/potensi-image-10.png",
-                position: "top-[230px] right-[112px] -z-10",
-                size: "w-[80px] ",
+                position:
+                  "top-[230px] right-[112px] -z-10 md:right-[128px] md:top-[240px] lg:top-[290px] xl:top-[320px] xl:right-[190px]",
+                size: "w-[80px] md:w-[90px] xl:w-[119px]",
               },
             ]}
           />
 
-          {/* TABEL PRODUKSI KOLTIKULTURA*/}
+          {/* TABEL PRODUKSI PANGAN*/}
           <div className="px-6">
             <h2 className="px-8 text-center leading-[16px] mb-5">
               <HeadSection
@@ -190,17 +205,19 @@ const PotensiPertanian = () => {
                   {
                     title: "Tabel Produksi Tanaman Pangan di ",
                     classname:
-                      "font-semibold text-[14px] text-black md:text-[36px] lg:text-[64px]",
+                      "font-semibold text-[14px] text-black md:text-[14px] lg:text-[20px]",
                   },
                   {
                     title: "Kecamatan Bringin ",
                     classname:
-                      "text-primary font-semibold text-[14px] md:text-[36px] md:top-0 lg:text-[64px]",
+                      "text-primary font-semibold text-[14px] md:top-0 md:text-[14px] lg:text-[20px]",
                   },
                 ]}
               />
             </h2>
-            <TableProduction data={DataPangan} />
+            <div className="md:w-full md:px-48 lg:px-52 xl:px-96">
+              <TableProduction data={DataPangan} />
+            </div>
           </div>
         </section>
 
@@ -209,9 +226,9 @@ const PotensiPertanian = () => {
           <img
             src="images/element-bg-4.png"
             alt="bg"
-            className="absolute top-0 w-full -z-50"
+            className="absolute top-0 w-full -z-50 md:hidden"
           />
-          <h2 className="px-20 text-center leading-[16px] mb-5">
+          <h2 className="px-24 text-center leading-[16px] mb-5">
             <HeadSection
               content={[
                 {
@@ -221,17 +238,17 @@ const PotensiPertanian = () => {
                 {
                   title: "Video Berkelanjutan ",
                   classname:
-                    "font-semibold text-[14px] text-black md:text-[36px] lg:text-[64px]",
+                    "font-semibold text-[14px] text-black md:text-[20px] lg:text-[32px]",
                 },
                 {
                   title: "Pertanian Padi ",
                   classname:
-                    "text-primary font-semibold text-[14px] md:text-[36px] md:top-0 lg:text-[64px]",
+                    "text-primary font-semibold text-[14px] md:top-0 md:text-[20px] lg:text-[32px]",
                 },
               ]}
             />
           </h2>
-          <div className="w-full px-5 mt-7">
+          <div className="w-full px-5 mt-7 md:w-[710px] md:ps-8 md:mx-auto md:overflow-auto lg:w-[970px] xl:w-[1300px] scrollbar-thin-4px scrollbar-thumb-gray-400">
             <Pagination
               data={DataVideoPertanianPadi}
               CardComponent={CardVideo}
@@ -240,39 +257,44 @@ const PotensiPertanian = () => {
         </section>
 
         {/* SECTION PRODUKSI TANAMAN BUAH*/}
-        <section className="relative w-full pt-[350px] mt-5">
+        <section className="relative w-full pt-[350px] mt-5 md:pt-5">
           {/* IMAGE ABSOLUTE 2 : PRODUKSI TANAMAN PANGAN */}
           <SectionImage
             images={[
               {
                 src: "images/floated/potensi-image-11.png",
-                position: "top-0 left-1 -z-10",
-                size: "w-[123px]",
+                position:
+                  "top-0 left-1 -z-10 md:-left-6 md:top-[190px] lg:-left-6 lg:top-[230px] xl:-left-10 xl:top-[240px]",
+                size: "w-[123px] lg:w-[130px] xl:w-[228px]",
               },
               {
                 src: "images/floated/potensi-image-12.png",
-                position: "top-9 right-[135px] -z-20",
-                size: "w-[65px]",
+                position:
+                  "top-9 right-[135px] -z-20 md:right-[100px] md:top-[460px] lg:top-[560px] xl:top-[570px] xl:right-[250px]",
+                size: "w-[65px] md:w-[100px] lg:w-[117px]",
               },
               {
                 src: "images/floated/potensi-image-13.png",
-                position: "top-16 right-[68px] -z-10",
-                size: "w-[128px] ",
+                position:
+                  "top-16 right-[68px] -z-10 md:right-[40px] md:top-[280px] lg:top-[340px] xl:right-[80px] xl:top-[330px]",
+                size: "w-[128px] xl:w-[206px]",
               },
               {
                 src: "images/floated/potensi-image-14.png",
-                position: "top-[180px] left-[36px] -z-10",
-                size: "w-[98px] ",
+                position:
+                  "top-[180px] left-[36px] -z-10 md:left-[30px] md:top-[390px] lg:top-[440px] xl:left-[140px] xl:top-[520px]",
+                size: "w-[98px] md:w-[128px] xl:w-[148px]",
               },
               {
                 src: "images/floated/potensi-image-15.png",
-                position: "top-[230px] right-[112px] -z-10",
-                size: "w-[80px] ",
+                position:
+                  "top-[230px] right-[112px] -z-10 md:right-[100px] md:top-[200px] md:-z-20 lg:top-[260px] xl:right-[200px] xl:top-[240px]",
+                size: "w-[80px] md:w-[128px] xl:w-[151px]",
               },
             ]}
           />
 
-          {/* TABEL PRODUKSI KOLTIKULTURA*/}
+          {/* TABEL PRODUKSI BUAH*/}
           <div className="px-6">
             <h2 className="px-8 text-center leading-[16px] mb-5">
               <HeadSection
@@ -284,23 +306,25 @@ const PotensiPertanian = () => {
                   {
                     title: "Tabel Produksi Tanaman Buah di ",
                     classname:
-                      "font-semibold text-[14px] text-black md:text-[36px] lg:text-[64px]",
+                      "font-semibold text-[14px] text-black md:text-[14px] lg:text-[20px]",
                   },
                   {
                     title: "Kecamatan Bringin ",
                     classname:
-                      "text-primary font-semibold text-[14px] md:text-[36px] md:top-0 lg:text-[64px]",
+                      "text-primary font-semibold text-[14px] md:text-[14px] lg:text-[20px] md:top-0",
                   },
                 ]}
               />
             </h2>
-            <TableProduction data={DataBuah} />
+            <div className="md:w-full md:px-48 lg:px-52 xl:px-96">
+              <TableProduction data={DataBuah} />
+            </div>
           </div>
         </section>
 
         {/* SECTION VIDEO BERKELANJUTAN PERTANIAN PISANG */}
         <section className="relative w-full pt-0 mt-7">
-          <h2 className="px-20 text-center leading-[16px] mb-5">
+          <h2 className="px-24 text-center leading-[16px] mb-5">
             <HeadSection
               content={[
                 {
@@ -310,17 +334,17 @@ const PotensiPertanian = () => {
                 {
                   title: "Video Berkelanjutan ",
                   classname:
-                    "font-semibold text-[14px] text-black md:text-[36px] lg:text-[64px]",
+                    "font-semibold text-[14px] text-blackmd:text-[20px] lg:text-[32px]",
                 },
                 {
                   title: "Pertanian Pisang ",
                   classname:
-                    "text-primary font-semibold text-[14px] md:text-[36px] md:top-0 lg:text-[64px]",
+                    "text-primary font-semibold text-[14px] d:text-[20px] lg:text-[32px] md:top-0",
                 },
               ]}
             />
           </h2>
-          <div className="w-full px-5 mt-7">
+          <div className="w-full px-5 mt-7 md:w-[710px] md:ps-8 md:mx-auto md:overflow-auto lg:w-[970px] xl:w-[1300px]">
             <Pagination
               data={DataVideoPertanianPisang}
               CardComponent={CardVideo}

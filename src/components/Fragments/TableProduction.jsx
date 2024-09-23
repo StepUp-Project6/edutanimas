@@ -7,8 +7,8 @@ const TableProduction = ({ data }) => {
   };
 
   return (
-    <div className="lg:rounded border border-[#25bb57]">
-      <table className="w-full border-collapse border  rounded-lg overflow-hidden lg:rounded">
+    <div className="rounded border border-[#25bb57]">
+      <table className="w-full border-collapse border overflow-hidden rounded">
         <thead className="bg-[#2FB95D] text-white text-xs lg:text-sm">
           <tr className="w-full">
             <th className="w-[12%] px-2 py-1 lg:py-2 lg:font-semibold">No</th>
