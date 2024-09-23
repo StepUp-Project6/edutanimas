@@ -21,7 +21,7 @@ export const DataVideoPertanianCabai = [
   },
   {
     id: 4,
-    title: "BUDIDAYA TANAMAN CABAI RAMAH LINGKUNGAN | CABAI SEMI ORGANIK",
+    title: "Budidaya Tanaman Cabai Ramah Linkungan | Cabai Semi Organik",
     image: "images/imageVideo/pertanian-cabai-4.png",
     link: "https://youtu.be/oc_U_mXlhbo?si=P8vlhD5qgwIlhzjX",
   },
