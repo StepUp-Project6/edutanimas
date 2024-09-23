@@ -17,7 +17,7 @@ const PotensiPertanian = () => {
   return (
     <div className="font-mulish min-h-screen flex flex-col">
       <Navbar />
-      <main className="w-full mt-[70px] pb-40">
+      <main className="w-full mt-[70px] mb-5">
         <h1 className="text-center">
           <HeadSection
             width="font-bold"
@@ -94,6 +94,7 @@ const PotensiPertanian = () => {
             <TableProduction data={DataHoltikultura} />
           </div>
         </section>
+
         {/* SECTION VIDEO BERKELANJUTAN PERTANIAN CABAI */}
         <section className="relative w-full pt-0 mt-14">
           <img
@@ -128,6 +129,7 @@ const PotensiPertanian = () => {
             />
           </div>
         </section>
+
         {/* SECTION PRODUKSI TANAMAN PANGAN*/}
         <section className="relative w-full pt-[350px] mt-5">
           {/* IMAGE ABSOLUTE 2 : PRODUKSI TANAMAN PANGAN */}
@@ -186,6 +188,7 @@ const PotensiPertanian = () => {
             <TableProduction data={DataPangan} />
           </div>
         </section>
+
         {/* SECTION VIDEO BERKELANJUTAN PERTANIAN PADI */}
         <section className="relative w-full pt-0 mt-7">
           <img
@@ -221,7 +224,7 @@ const PotensiPertanian = () => {
           </div>
         </section>
 
-        {/* SECTION PRODUKSI TANAMAN PANGAN*/}
+        {/* SECTION PRODUKSI TANAMAN BUAH*/}
         <section className="relative w-full pt-[350px] mt-5">
           {/* IMAGE ABSOLUTE 2 : PRODUKSI TANAMAN PANGAN */}
           <SectionImage
@@ -279,13 +282,9 @@ const PotensiPertanian = () => {
             <TableProduction data={DataBuah} />
           </div>
         </section>
-        {/* SECTION VIDEO BERKELANJUTAN PERTANIAN PADI */}
+
+        {/* SECTION VIDEO BERKELANJUTAN PERTANIAN PISANG */}
         <section className="relative w-full pt-0 mt-7">
-          <img
-            src="images/element-bg-4.png"
-            alt="bg"
-            className="absolute top-0 w-full -z-50"
-          />
           <h2 className="px-20 text-center leading-[16px] mb-5">
             <HeadSection
               content={[
