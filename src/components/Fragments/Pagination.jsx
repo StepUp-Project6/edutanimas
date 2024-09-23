@@ -4,8 +4,8 @@ const Pagination = ({ data, CardComponent }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isFading, setIsFading] = useState(false);
 
-  // Menentukan jumlah item per halaman berdasarkan ukuran layar
-  const itemsPerPage = window.innerWidth < 768 ? 6 : 8;
+  // Menentukan jumlah item per halaman (2 baris x 2 kolom = 4 item)
+  const itemsPerPage = 4;
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
   // Fungsi untuk mengubah halaman dengan fade effect
@@ -29,7 +29,7 @@ const Pagination = ({ data, CardComponent }) => {
     <div className="flex flex-col items-center">
       {/* Render komponen kartu yang dinamis berdasarkan data */}
       <div
-        className={`grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4 mb-6 transition-opacity duration-500 ${
+        className={`grid grid-cols-2 gap-x-4 gap-y-4 mb-6 transition-opacity duration-500 ${
           isFading ? "opacity-0" : "opacity-100"
         }`}
       >
@@ -39,7 +39,7 @@ const Pagination = ({ data, CardComponent }) => {
       </div>
 
       {/* Pagination */}
-      {data.length > 4 && (
+      {data.length > itemsPerPage && (
         <div className="flex rounded-md shadow-customShadow border border-gray-100 lg:mt-2">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map(
             (pageNumber, index) => (
