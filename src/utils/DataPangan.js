@@ -30,7 +30,7 @@ export const DataPangan = [
   {
     id: 5,
     title: "Kedelai",
-    quantity: 0,
+    quantity: 127,
     image: "images/pangan/kedelai.png",
     bgGreen: false,
   },
