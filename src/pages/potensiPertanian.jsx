@@ -17,7 +17,12 @@ const PotensiPertanian = () => {
   return (
     <div className="font-mulish min-h-screen flex flex-col">
       <Navbar />
-      <main className="w-full mt-[70px] mb-5">
+      <main className="w-full mt-[70px] mb-5 md:relative lg:mt-[60px] overflow-hidden">
+        <img
+          src="images/element-bg-5.png"
+          alt="bg"
+          className="hidden absolute md:top-[500px] lg:top-[610px] xl:top-[625px] w-full -z-50 md:block"
+        />
         <h1 className="text-center">
           <HeadSection
             width="font-bold"
@@ -32,39 +37,47 @@ const PotensiPertanian = () => {
           content="Potensi Hasil Pertanian di Kecamatan Bringin disajikan dalam tabel di bawah ini."
         />
         {/* SECTION PRODUKSI HOLTIKULTURA*/}
-        <section className="relative w-full pt-[350px] mt-14 h-[830px]">
+        <section
+          className="relative w-full pt-[350px] mt-14 h-[830px] md:pt-0 md:mt-6 
+        md:h-[500px] md:mb-8 lg:h-[700px]"
+        >
           <img
             src="images/element-bg-3.png"
             alt="bg"
-            className="absolute bottom-0 w-full -z-50 "
+            className="absolute bottom-0 w-full -z-50 md:hidden"
           />
           {/* IMAGE ABSOLUTE 1 : PRODUKSI HOLTIKULTURA */}
           <SectionImage
             images={[
               {
                 src: "images/floated/potensi-image-1.png",
-                position: "top-0 left-1 -z-10",
-                size: "w-[123px]",
+                position:
+                  "top-0 left-1 -z-10 md:-left-6 md:top-[120px] lg:-left-4 lg:top-[150px] xl:-left-8 xl:top-[140px]",
+                size: "w-[123px] lg:w-[130px] xl:w-[190px]",
               },
               {
                 src: "images/floated/potensi-image-2.png",
-                position: "top-9 right-[135px] -z-20",
-                size: "w-[65px]",
+                position:
+                  "top-9 right-[135px] -z-20 md:right-[100px] md:top-[100px] lg:top-[120px] xl:right-[160px] xl:top-[110px]",
+                size: "w-[65px] md:w-[90px] lg:w-[110px] xl:w-[152px]",
               },
               {
                 src: "images/floated/potensi-image-3.png",
-                position: "top-16 right-[68px] -z-10",
-                size: "w-[128px] ",
+                position:
+                  "top-16 right-[68px] -z-10 md:right-[40px] md:top-[150px] lg:top-[200px] xl:top-[210px] xl:right-[60px]",
+                size: "w-[128px] xl:w-[192px]",
               },
               {
                 src: "images/floated/potensi-image-4.png",
-                position: "top-[180px] left-[36px] -z-10",
-                size: "w-[98px] ",
+                position:
+                  "top-[180px] left-[36px] -z-10 md:left-[50px] md:top-[260px] lg:left-[75px] lg:top-[300px] xl:top-[370px] xl:left-[100px]",
+                size: "w-[98px] md:w-[86px] xl:w-[106px]",
               },
               {
                 src: "images/floated/potensi-image-5.png",
-                position: "top-[230px] right-[112px] -z-10",
-                size: "w-[80px] ",
+                position:
+                  "top-[230px] right-[112px] -z-10 md:right-[148px] md:top-[230px] lg:top-[290px] xl:top-[350px] xl:right-[240px]",
+                size: "w-[80px] md:w-[66px] xl:w-[81px]",
               },
             ]}
           />
@@ -81,33 +94,35 @@ const PotensiPertanian = () => {
                   {
                     title: "Tabel Produksi Holtikultura di ",
                     classname:
-                      "font-semibold text-[14px] text-black md:text-[36px] lg:text-[64px]",
+                      "font-semibold text-[14px] text-black md:text-[14px] lg:text-[20px]",
                   },
                   {
                     title: "Kecamatan Bringin ",
                     classname:
-                      "text-primary font-semibold text-[14px] md:text-[36px] md:top-0 lg:text-[64px]",
+                      "text-primary font-semibold text-[14px] md:text-[14px] md:top-0 lg:text-[20px]",
                   },
                 ]}
               />
             </h2>
-            <TableProduction data={DataHoltikultura} />
+            <div className="md:w-full md:px-48 lg:px-52 xl:px-80">
+              <TableProduction data={DataHoltikultura} />
+            </div>
           </div>
         </section>
 
         {/* SECTION VIDEO BERKELANJUTAN PERTANIAN CABAI */}
-        <section className="relative w-full pt-0 mt-14">
+        <section className="relative w-full pt-0 mt-14 md:mt-0">
           <img
             src="images/element-bg-4.png"
             alt="bg"
-            className="absolute top-0 w-full -z-50"
+            className="absolute top-0 w-full -z-50 md:hidden"
           />
           <h2 className="px-20 text-center leading-[16px] mb-5">
             <HeadSection
               content={[
                 {
                   title: "",
-                  className: "font-semibold text-[14px]",
+                  className: "font-semibold text-[14px] ",
                 },
                 {
                   title: "Video Berkelanjutan ",
