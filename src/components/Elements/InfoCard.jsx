@@ -21,8 +21,8 @@ const InfoCard = ({ title, description }) => {
 
       {/* Teks di sebelah kanan */}
       <div>
-        <h3 className="text-base font-semibold text-gray-900">{title}</h3>
-        <p className="text-gray-600 text-justify text-xs font-mulish">{description}</p>
+        <h3 className="text-base font-semibold text-gray-900 md:text-[20px]">{title}</h3>
+        <p className="text-gray-600 text-justify text-xs font-mulish md:text-[14px] lg:text-[16px] xl:text-[18px]">{description}</p>
       </div>
     </div>
   );
