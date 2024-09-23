@@ -10,7 +10,7 @@ const PlatformP5 = () => {
       <Navbar />
       <main className="relative w-full h-screen pt-[150px] lg:pt-[130px] xl:pt-[90px]">
         <div className="px-10 md:px-20 xl:px-[250px]">
-          <h1 className="md:leading-[40px] lg:leading-[80px] xl:leading-[72px]">
+          <h1 className="text-center md:leading-[40px] lg:leading-[80px] xl:leading-[72px]">
             <HeadSection
               content={[
                 {
