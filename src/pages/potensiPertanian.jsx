@@ -12,6 +12,7 @@ import { DataVideoPertanianPadi } from "../utils/DataVideoPertanianPadi";
 import { DataVideoPertanianPisang } from "../utils/DataVideoPertanianPisang";
 import { DataPangan } from "../utils/DataPangan";
 import { DataBuah } from "../utils/DataBuah";
+import Footer from "../components/Fragments/Footer";
 
 const PotensiPertanian = () => {
   return (
@@ -352,6 +353,9 @@ const PotensiPertanian = () => {
           </div>
         </section>
       </main>
+
+      {/* FOOTER */}
+      <Footer />
     </div>
   );
 };

@@ -12,6 +12,7 @@
 .scrollbar-thin-4px::-webkit-scrollbar-thumb {
   background-color: #a0aec0; /* Warna untuk scrollbar */
   border-radius: 9999px; /* Membuat scrollbar lebih halus dan bulat */
+}
 /* Hide scrollbar for Chrome, Safari, and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

@@ -3,6 +3,7 @@ import Navbar from "../components/Fragments/Navbar";
 import HeadSection from "../components/Elements/HeadSection";
 import TextParagraph from "../components/Elements/TextParagraph";
 import CustomButton from "../components/Elements/CustomButton";
+import Footer from "../components/Fragments/Footer";
 
 const PlatformP5 = () => {
   return (
@@ -58,6 +59,8 @@ const PlatformP5 = () => {
           className="hidden -z-20 absolute bottom-0 w-full lg:block"
         />
       </main>
+
+      <Footer />
     </div>
   );
 };
