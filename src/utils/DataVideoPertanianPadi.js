@@ -52,10 +52,4 @@ export const DataVideoPertanianPadi = [
     image: "images/imageVideo/pertanian-padi-8.png",
     link: "https://youtu.be/4LThgnPmlw8?si=5jJbtuQUqnLQFCaE",
   },
-  {
-    id: 9,
-    title: "Pengelolaan Tanaman Terpadu Padi",
-    image: "images/imageVideo/pertanian-padi-9.png",
-    link: "https://youtu.be/VPdHBW9mByk?si=d4d7UXN3PtoaOe8Y",
-  },
 ];
