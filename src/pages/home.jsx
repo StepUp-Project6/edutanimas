@@ -22,33 +22,33 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <section className="mt-16 w-full relative h-[550px]">
+      <section className="mt-16 w-full relative h-[550px] md:mt-[80px] md:h-[160px] lg:mt-[80px] lg:h-[270px] xl:mt-[176px] xl:h-[300px]">
         <SectionImage
           images={[
             {
               src: "images/home/home-1.png",
-              position: "top-32 left-0",
-              size: "w-[122px] h-[132px] lg:w-[200px] lg:h-[217px]",
+              position: "top-32 left-0 md:top-0 md:-left-9 md:mt-[-30px] lg:top-0 lg:-left-4 lg:mt-[-30px] xl:top-0 xl:-left-20 xl:mt-[-70px]",
+              size: "w-[122px] h-[132px] lg:w-[160px] lg:h-[200px] xl:w-[200px] xl:h-[230px]",
             },
             {
               src: "images/home/home-2.png",
-              position: "top-80 left-8",
-              size: "w-[91px] h-[95px] lg:w-[141px] lg:h-[137px]",
+              position: "top-80 left-8 md:top-[110px] md:left-40 lg:top-72 lg:left-60",
+              size: "w-[91px] h-[95px] lg:w-[131px] md:h-[127px] xl:w-[141px] xl:h-[137px]",
             },
             {
               src: "images/home/home-5.png",
-              position: "top-96 left-40",
-              size: "w-[82px] h-[80px] lg:w-[123px] lg:h-[109px]",
+              position: "top-96 left-40 md:ml-[300px] md:top-40 lg:ml-[450px] lg:top-[350px] xl:ml-[700px] xl:top-[400px]",
+              size: "w-[82px] h-[80px] lg:w-[120px] lg:h-[122px] xl:w-[126px] xl:h-[132px]",
             },
             {
               src: "images/home/home-4.png",
-              position: "top-48 right-[56px]",
+              position: "top-48 right-[56px] md:right-7 md:top-[60px] lg:right-[-30px] lg:top-[140px] xl:right-7 xl:top-32",
               size: "w-[128px] h-[140px] lg:w-[222px] lg:h-[221px]",
             },
             {
               src: "images/home/home-3.png",
-              position: "top-40 right-32 -z-10",
-              size: "w-[65px] h-[59px] lg:w-[68px] lg:h-[62px]",
+              position: "top-40 right-32 -z-10 md:top-[30px] md:right-[120px] lg:top-[40px] lg:right-[100px] xl:top-[30px] xl:right-48",
+              size: "w-[65px] h-[59px] lg:w-[110px] lg:h-[110px] xl:w-[130px] xl:h-[130px]",
             },
           ]}
         />
@@ -62,6 +62,10 @@ const Home = () => {
                     classname: "",
                   },
                   { title: "Pertanian ", classname: "text-primary" },
+                ]}
+              />
+              <HeadSection
+                content={[
                   { title: "Masuk ", classname: "" },
                   { title: "Sekolah ", classname: "", highlight: true },
                 ]}
@@ -71,17 +75,17 @@ const Home = () => {
         </div>
 
         <div className="flex justify-center items-center absolute bottom-0 inset-x-0 ">
-          <a href="" target="_blank" className="btn bg-primary text-xs py-3 px-6 text-white font-bold rounded-[10px]">
+          <a href="" target="_blank" className="btn bg-primary text-xs text-center py-3 px-6 text-white font-bold rounded-[10px] xl:w-[168px] xl:h-[47px] xl:font-semibold xl:text-[18px]">
             Get Started
           </a>
         </div>
       </section>
 
       {/* Petani Indonesia */}
-      <section className="mt-[60px] ml-[20px] mr-[20px] md:ml-[40px] md:mr-[40px] lg:ml-[55px] lg:mr-[55px] xl:ml-[70px] xl:mr-[70px] ">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+      <section className="mt-[60px] md:mt-[200px] lg:mt-[300px] xl:mt-[350px] ml-[20px] mr-[20px] md:ml-[40px] md:mr-[40px] lg:ml-[70px] lg:mr-[70px] xl:ml-[70px] xl:mr-[70px] ">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start lg:gap-x-[120px]">
           {/* Bagian Kiri: Judul dan Teks */}
-          <div className="md:w-[60%]">
+          <div className="md:w-[60%] lg:w-[70%]">
             <div className="flex justify-start ">
               <HeadSection content={[{ title: "Petani di " }, { title: "Indonesia", classname: "text-primary" }]} />
             </div>
@@ -97,17 +101,17 @@ const Home = () => {
           </div>
 
           {/* Bagian Kanan: Gambar */}
-          <div className="flex justify-center mt-[25px] md:mt-0 md:w-[35%]">
+          <div className="flex justify-center mt-[25px] md:mt-0 md:w-[35%] lg:w-[30%]">
             <img src="/images/diagram.png" alt="Diagram" className="w-[198px]" />
           </div>
         </div>
       </section>
 
       {/* TaniMas */}
-      <section className="mt-[40px] ml-[20px] mr-[20px] md:ml-[40px] md:mr-[40px] lg:ml-[55px] lg:mr-[55px] xl:ml-[70px] xl:mr-[70px] xl:mt-[88px]">
+      <section className="mt-[40px] ml-[20px] mr-[20px] md:ml-[40px] md:mr-[40px] lg:ml-[70px] lg:mr-[70px] xl:ml-[70px] xl:mr-[70px] xl:mt-[88px]">
         <div className="flex flex-col md:flex-row md:justify-between">
           {/* Bagian teks - 70% */}
-          <div className="md:w-[70%] md:pr-[20px]">
+          <div className="md:w-[70%] md:pr-[20px] lg:w-[70%]">
             <div className="flex justify-start">
               <HeadSection content={[{ title: "Apa itu " }, { title: "Tani Mas?", classname: "text-primary" }]} />
             </div>
@@ -126,14 +130,14 @@ const Home = () => {
           </div>
 
           {/* Bagian gambar - 30% */}
-          <div className="mt-[20px] ml-[24px] mr-[24.5px] md:mt-0 md:w-[30%] md:flex md:items-center">
+          <div className="mt-[20px] ml-[24px] mr-[24.5px] md:mt-0 md:w-[30%] lg:w-[30%] md:flex md:items-center">
             <img src="/images/petani.png" alt="Gambar Petani" className="md:max-w-full" />
           </div>
         </div>
       </section>
 
       {/* Kriteria Sekolah */}
-      <section className="mt-[50px] ml-[20px] mr-[20px] md:ml-[40px] md:mr-[40px] lg:ml-[55px] lg:mr-[55px] xl:ml-[70px] xl:mr-[70px] xl:mt-[104px] ">
+      <section className="mt-[50px] ml-[20px] mr-[20px] md:ml-[40px] md:mr-[40px] lg:ml-[70px] lg:mr-[70px] xl:ml-[70px] xl:mr-[70px] xl:mt-[104px] ">
         <div className="flex justify-center">
           <HeadSection content={[{ title: "Kriteria " }, { title: "Sekolah", classname: "text-primary" }]} />
         </div>
@@ -143,7 +147,7 @@ const Home = () => {
         </div>
 
         {/* Layout grid untuk item Card */}
-        <div className="mt-[22px] grid grid-cols-1 gap-[10px] md:grid-cols-2 md:gap-x-[40px] md:gap-y-[20px] md:mt-[30px] xl:mt-[36px] xl:gap-x-[40px] xl:gap-y-[30px]">
+        <div className="mt-[22px] grid grid-cols-1 gap-[10px] md:grid-cols-2 md:gap-x-[40px] md:gap-y-[20px] md:mt-[30px] lg:mt-[36px] lg:gap-x-[120px]   xl:mt-[36px] xl:gap-x-[40px] xl:gap-y-[30px] xl:mr-[-30px]">
           <Card imageSrc="/images/card/card-1.png" title="Lokasi Sekolah" description="Sekolah berlokasi di Ibukota Provinsi atau di Kabupaten/Kota terdekat dengan Ibukota provinsi" />
           <Card imageSrc="/images/card/card-2.png" title="Lokasi Sekolah" description="Memiliki lahan / kebun sekolah minimal 500 m2" />
           <Card imageSrc="/images/card/card-3.png" title="Sumber Air" description="Terdapat sumber air untuk budidaya pertanian" />
