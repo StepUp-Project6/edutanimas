@@ -20,7 +20,6 @@ const Home = () => {
   return (
     <>
       <Navbar />
-
       {/* Edukasi Pertanian Masuk Sekolah */}
       <section className="mt-16 w-full">
         <div className="flex justify-center">
