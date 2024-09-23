@@ -4,7 +4,7 @@ export const DataBuah = [
         title: "Alpukat",
         quantity: 901,
         image: "images/buah/alpukat.png",
-        bgGreen: true,
+        bgGreen: false,
     },
     {
         id: 2,
