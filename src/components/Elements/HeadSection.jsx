@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 const HeadSection = ({ content = [], classname = "", width = "" }) => {
   return (
     <h1
-      className={`text-black text-center font-bricolage ${width} ${
-        classname ? classname : "text-[24px] lg:text-[64px]"
+      className={`text-black font-bricolage ${width} ${
+        classname ? classname : "text-[24px] md:text-[36px] lg:text-[64px]"
       }`}
     >
       <span>
