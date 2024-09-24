@@ -70,13 +70,13 @@ const PertanianBerkelanjutan = () => {
         <div className="absolute inset-x-0 bottom-10 md:bottom-[60%] flex justify-center items-center">
           <a
             href=""
-            className="text-xs lg:text-lg font-semibold bg-[#218225] text-white px-8 py-3 rounded-[10px]"
+            className="text-xs lg:text-lg font-semibold bg-[#218225] text-white px-8 py-3 rounded-[10px] font-mulish"
           >
             Get Started
           </a>
         </div>
         <div>
-          <img src="images/header-shape1.png" alt="" className="-z-20 absolute -bottom-0"/>
+          <img src="images/header-shape1.png" alt="" className="-z-20 absolute -bottom-0 w-full md:-bottom-20 xl:-bottom-40"/>
         </div>
       </section>
       <section className="relative mt-4">

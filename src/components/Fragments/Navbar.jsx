@@ -42,15 +42,15 @@ const Navbar = () => {
   return (
     <>
       <nav className="top-0 relative">
-        <div className="flex pt-8 md:ps-[42px] justify-between items-center lg:ps-[134px] w-full ">
+        <div className="flex pt-8 md:ps-[42px] justify-between items-center lg:ps-[134px] w-full font-mulish ">
           <div className="flex flex-row items-center">
             <IoMenuOutline
-              className="h-8 w-[71px] md:hidden"
+              className="h-8 w-[71px] lg:hidden"
               onClick={toggleMenu}
             />
             <Logo />
           </div>
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <div className="flex md:mr-10 lg:mr-[80px]">
               {menu.map((item) => (
                 <Link
@@ -83,7 +83,7 @@ const Navbar = () => {
 const SideBar = ({ isMenuOpen }) => {
   return (
     <div
-      className={`w-[292px] h-screen fixed top-0 z-50 bg-white border-r-2 transition-transform duration-300 ${
+      className={`w-[292px] font-mulish h-screen fixed top-0 z-50 bg-white border-r-2 transition-transform duration-300 ${
         isMenuOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
