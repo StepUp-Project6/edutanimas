@@ -1,27 +1,46 @@
-import React from 'react'
+import HeadSection2 from "../Elements/HeadSection2";
 
-const Table = () => {
+const Table = ({ tableData }) => {
   return (
-    <>
-        <table className='table-auto border-collapse border border-primary'>
-            <thead>
-                <tr className="border border-primary">
-                    <th>Sistem</th>
-                    <th>Sub-sistem</th>
-                    <th>Contoh Praktik</th>
-                    <th>Contoh Teknologi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        
+    <div className="w-full overflow-x-auto rounded-lg mt-4">
+      <table className="min-w-[1138px] w-full text-left text-xs lg:text-sm border-collapse border font-mulish " >
+        <caption className="caption-top mb-4">
+        <HeadSection2
+        classname="text-sm lg:text-xl"
+            width="lg:w-[790px] font-semibold text-start"
+            content={[{ title: "Contoh penerapan agroforestri di ", classname: ""}, {title: "Pulau Jawa", classname: "text-primary"}]}
+          />
+        </caption>
+        <thead className="bg-primary/85 border-white ">
+          <tr className="border">
+            <th className="ps-12 border border-t-primary/85  border-l-primary/85 px-4 py-2 w-[230px]">Sistem</th>
+            <th className="ps-12 border border-t-primary/85 px-4 py-2 w-[350px]">Sub-Sistem</th>
+            <th className="ps-12 border border-t-primary/85 px-4 py-2 w-[269px]">Contoh Praktik</th>
+            <th className="ps-12 border border-t-primary/85 border-r-primary/85 px-4 py-2 w-[289px]">Contoh Teknologi</th>
+          </tr>
+        </thead>
+        <tbody className="bg-primary/10">
+          {tableData.map((data) => (
+            <>
+              {data.rows.map((row, index) => (
+                <tr key={`${data.sistem}-${index}`}>
+                  {/* Hanya tampilkan 'sistem' pada baris pertama dari setiap sistem */}
+                  {index === 0 && (
+                    <td className="ps-12 border border-primary/85 px-4 py-2" rowSpan={data.rows.length}>
+                      {data.sistem}
                     </td>
+                  )}
+                  <td className="border ps-12 border-primary/85 px-4 py-2">{row.subSistem}</td>
+                  <td className="border ps-12 border-primary/85 px-4 py-2">{row.contohPraktik}</td>
+                  <td className="border ps-12 border-primary/85 px-4 py-2">{row.contohTeknologi}</td>
                 </tr>
-            </tbody>
-        </table>
-    </>
-  )
-}
+              ))}
+            </>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
-export default Table
+export default Table;
