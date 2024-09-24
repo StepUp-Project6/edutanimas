@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="top-0 relative">
-        <div className="flex pt-8 md:ps-[82px] justify-between items-center lg:ps-[134px] w-full ">
+        <div className="flex pt-8 md:ps-[42px] justify-between items-center lg:ps-[134px] w-full ">
           <div className="flex flex-row items-center">
             <IoMenuOutline
               className="h-8 w-[71px] md:hidden"
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <Link
                   to={item.path}
                   key={item.name}
-                  className={`md:ml-5 py-4 lg:ml-8 md:text-sm lg:text-base font-medium text-black ${
+                  className={`md:ml-5 py-4 lg:ml-8 md:px-2 lg:px-0 md:text-center md:text-sm lg:text-base font-medium text-black ${
                     location.pathname === item.path ? "text-primary" : ""
                   } `}
                 >

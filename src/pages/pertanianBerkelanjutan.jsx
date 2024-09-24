@@ -12,44 +12,51 @@ import { kriteria } from "../utils/DataKriteria";
 import { tantangan } from "../utils/DataTantangan";
 import Logo from "../components/Elements/Logo";
 import Table from "../components/Fragments/Table";
+import { tableData } from "../utils/DataTable";
+import Footer from "../components/Fragments/Footer";
 
 const PertanianBerkelanjutan = () => {
   return (
-    <div className="no-scrollbar md:scrollbar-visible overflow-x-hidden">
+    <div className="no-scrollbar md:scrollbar-visible overflow-x-hidden min-h-screen flex flex-col">
       <Navbar />
-      <section className="relative mt-16 lg:mt-40 w-full h-[100vh] lg:h-[730px] overflow-x-hidden ">
+      <section className="relative mt-16 lg:mt-40 w-full h-[550px] md:h-[420px] lg:h-[730px] overflow-x-hidden ">
         <SectionImage
-          images={[
-            {
-              src: "images/floated/floated-1.png",
-              position: "top-32 left-0 lg:top-0 lg:-left-20",
-              size: "w-[122px] h-[132px] lg:w-[200px] lg:h-[217px]",
-            },
-            {
-              src: "images/floated/floated-2.png",
-              position: "top-80 left-8 lg:top-72 lg:left-60",
-              size: "w-[91px] h-[95px] lg:w-[141px] lg:h-[137px]",
-            },
-            {
-              src: "images/floated/floated-3.png",
-              position: "top-96 right-28 lg:right-80",
-              size: "w-[82px] h-[80px] lg:w-[123px] lg:h-[109px]",
-            },
-            {
-              src: "images/floated/floated-4.png",
-              position: "top-48 right-[56px] lg:right-10 lg:top-32",
-              size: "w-[128px] h-[140px] lg:w-[222px] lg:h-[221px]",
-            },
-            {
-              src: "images/floated/floated-5.png",
-              position: "top-40 right-32 lg:top-28 lg:right-48 -z-10",
-              size: "w-[65px] h-[59px] lg:w-[68px] lg:h-[62px]",
-            },
-          ]}
+        images={[
+          {
+            src: "images/floated/floated-1.png",
+            position:
+              "top-32 left-0 md:top-0 md:-left-9 md:mt-[-30px] lg:top-0 lg:-left-4 lg:mt-[-30px] xl:top-0 xl:-left-20 xl:mt-[-70px]",
+            size: "w-[122px] h-[132px] lg:w-[160px] lg:h-[200px] xl:w-[200px] xl:h-[230px]",
+          },
+          {
+            src: "images/floated/floated-2.png",
+            position:
+              "top-80 left-8 md:top-[110px] md:left-40 lg:top-72 lg:left-60",
+            size: "w-[91px] h-[95px] lg:w-[131px] md:h-[127px] xl:w-[141px] xl:h-[137px]",
+          },
+          {
+            src: "images/floated/floated-3.png",
+            position:
+              "top-96 left-40 md:ml-[300px] md:top-40 lg:ml-[450px] lg:top-[350px] xl:ml-[700px] xl:top-[400px]",
+            size: "w-[82px] h-[80px] lg:w-[120px] lg:h-[122px] xl:w-[126px] xl:h-[132px]",
+          },
+          {
+            src: "images/floated/floated-4.png",
+            position:
+              "top-48 right-[56px] md:right-7 md:top-[60px] lg:right-[-30px] lg:top-[140px] xl:right-7 xl:top-32",
+            size: "w-[128px] h-[140px] lg:w-[222px] lg:h-[221px]",
+          },
+          {
+            src: "images/floated/floated-5.png",
+            position:
+              "top-40 right-32 -z-10 md:top-[30px] md:right-[120px] lg:top-[40px] lg:right-[100px] xl:top-[30px] xl:right-48",
+            size: "w-[65px] h-[59px] lg:w-[110px] lg:h-[110px] xl:w-[130px] xl:h-[130px]",
+          },
+        ]}
         />
         <div className="flex justify-center">
           <HeadSection
-            width="lg:w-[790px] font-bold text-center"
+            width="w-[290px] md:w-[522px] lg:w-[790px] font-bold text-center"
             content={[
               {
                 title: "Pembangunan ",
@@ -60,7 +67,7 @@ const PertanianBerkelanjutan = () => {
             ]}
           />
         </div>
-        <div className="absolute inset-x-0 bottom-10 lg:bottom-[60%] flex justify-center items-center">
+        <div className="absolute inset-x-0 bottom-10 md:bottom-[60%] flex justify-center items-center">
           <a
             href=""
             className="text-xs lg:text-lg font-semibold bg-[#218225] text-white px-8 py-3 rounded-[10px]"
@@ -68,9 +75,15 @@ const PertanianBerkelanjutan = () => {
             Get Started
           </a>
         </div>
+        <div>
+          <img src="images/header-shape1.png" alt="" className="-z-20 absolute -bottom-0"/>
+        </div>
       </section>
-      <section className="">
-        <div className="pl-5 lg:pl-20">
+      <section className="relative mt-4">
+      <div>
+          <img src="images/header-shape1.1.png" alt="" className="-z-20 absolute -top-4"/>
+        </div>
+        <div className="pl-5 md:pl-14 lg:pl-20">
           <HeadSection2
             width="lg:w-[790px] font-semibold text-start"
             content={[{ title: "Defenisi", classname: "", highlight: true }]}
@@ -85,7 +98,7 @@ const PertanianBerkelanjutan = () => {
           />
           <div className="flex flex-row justify-between">
             <div className="w-[848px]">
-              <div className="w-full pr-5">
+              <div className="w-full pr-5 md:pr-14">
                 <Paragraph
                   classname={"mb-5"}
                   text={
@@ -105,16 +118,16 @@ const PertanianBerkelanjutan = () => {
                 <img
                   src="images/defenisi/group-1.png"
                   alt=""
-                  className="absolute -z-10 scale-150 top-10  h-auto lg:hidden"
+                  className="absolute -z-10 scale-150 md:scale-100 md:top-0 top-10  h-auto lg:hidden"
                 />
               </div>
-              <div className="pr-5">
+              <div className="pr-5 md:pr-14">
                 <Paragraph
                   text={
                     "Konsep keberlanjutan pertanian mengandung  lima alternatif pengertian, yaitu utilitas yang diperoleh masyarakat  tidak berkurang sepanjang waktu, pengelolaan sumber daya alam untuk  memelihara kesempatan produksi dimasa mendatang, sumber daya alam tidak  berkurang sepanjang waktu, sumber daya alam dikelola untuk  mempertahankan produksi jasa sumber daya alam, dan terpenuhinya  keseimbangan dan daya tahan ekosistem."
                   }
                   highlight={3}
-                  classname={"mt-[237px] mb-5 lg:mt-0"}
+                  classname={"mt-[237px] md:mt-[380px] mb-5 lg:mt-0"}
                 />
                 <Paragraph
                   text={
@@ -137,7 +150,7 @@ const PertanianBerkelanjutan = () => {
       </section>
       {/* TUJUAN */}
       <section className="pt-20">
-        <div className="px-5 lg:pl-20">
+        <div className="px-5 md:pl-14 lg:pl-20">
           <HeadSection2
             width="lg:w-[790px] font-semibold text-start"
             content={[{ title: "Tujuan", classname: "", highlight: true }]}
@@ -152,7 +165,7 @@ const PertanianBerkelanjutan = () => {
           />
         </div>
         <div className="flex flex-col lg:flex-row-reverse lg:pt-12 ">
-          <div className="px-5 lg:pl-0 lg:pr-16 lg:pt-10">
+          <div className="px-5 md:px-14 lg:pl-0 lg:pr-16 lg:pt-10">
             <Paragraph
               text={
                 "Tujuan pembangunan pertanian berkelanjutan menurut Pretty dalam Dahuri, R. (2020) adalah:"
@@ -170,7 +183,7 @@ const PertanianBerkelanjutan = () => {
             <img
               src="images/tujuan/group-2.png"
               alt=""
-              className="-z-10 scale-150 lg:scale-100 mt-16 lg:hidden"
+              className="-z-10 scale-150 md:scale-125 lg:scale-100 mt-16 lg:hidden"
             />
             <img
               src="images/tujuan/group-1.png"
@@ -180,8 +193,8 @@ const PertanianBerkelanjutan = () => {
           </div>
         </div>
       </section>
-      <section className="pt-20 lg:h-[888px]">
-        <div className="px-5 lg:pl-20">
+      <section className="pt-20 md:pt-2 lg:pt-20 lg:h-[888px]">
+        <div className="px-5 md:pl-12 lg:pl-20">
           <HeadSection2
             width="lg:w-[790px] font-semibold text-start"
             content={[{ title: "Dimensi", classname: "", highlight: true }]}
@@ -195,8 +208,8 @@ const PertanianBerkelanjutan = () => {
             ]}
           />
         </div>
-        <div className="flex flex-col lg:flex-row lg:pt-5">
-          <div className="px-5 lg:pl-20 lg:pr-0 relative">
+        <div className="flex flex-col md:flex-row lg:pt-5">
+          <div className="px-5 md:pl-12 lg:pl-20 lg:pr-0 relative">
             <Paragraph
               text={
                 "Cakupan atau dimensi keberlanjutan pertanian menurut Wood dalam Lagiman (2020) meliputi :"
@@ -204,7 +217,7 @@ const PertanianBerkelanjutan = () => {
               highlight={3}
               classname={"mb-5 lg:mt-0"}
             />
-            <div className="lg:pr-[620px]">
+            <div className="md:pr-[300px] lg:pr-[620px]">
               <NumberedList header={false} content={dimensi} classname={" "} />
             </div>
           </div>
@@ -212,17 +225,17 @@ const PertanianBerkelanjutan = () => {
             <img
               src="images/dimensi/group-1.png"
               alt=""
-              className="-z-10 scale-100 lg:scale-100 mt-2 lg:hidden"
+              className="-z-10 scale-100 lg:scale-100 mt-2 md:hidden"
             />
             <img
               src="images/dimensi/group-2.png"
               alt=""
-              className="-z-10 max-w-[620px] absolute -mt-20 right-0 hidden lg:block"
+              className="-z-10 md:max-w-[320px] lg:max-w-[620px] absolute lg:-mt-20 md:-mt-12 right-0 hidden md:block"
             />
           </div>
         </div>
       </section>
-      <section className="">
+      <section className="md:pt-8">
         <div className="flex justify-center px-8 w-full">
           <HeadSection
             classname=""
@@ -236,7 +249,7 @@ const PertanianBerkelanjutan = () => {
             ]}
           />
         </div>
-        <div className="w-full px-5 lg:px-20 pt-10">
+        <div className="w-full px-5 md:px-12 lg:px-20 pt-10">
           <NumberedList2
             content={[
               {
@@ -254,19 +267,19 @@ const PertanianBerkelanjutan = () => {
             highlight={2}
             classname={""}
           />
-          <div className="grid grid-cols-3 gap-2 lg:gap-7 mt-5">
+          <div className="grid grid-cols-3 gap-2 lg:gap-7 mt-5 justify-items-center">
             <img
               key={image1[0].id}
               src={image1[0].src}
               alt=""
-              className={`${image1[0].classname}`}
+              className={`${image1[0].classname} justify-self-end`}
             />
-            <div className="grid grid-cols-2 gap-2 lg:gap-7">
+            <div className="grid grid-cols-2 gap-2 lg:gap-7 ">
               <img
                 key={image1[1].id}
                 src={image1[1].src}
                 alt=""
-                className={`${image1[1].classname}`}
+                className={`${image1[1].classname} md:mr-4`}
               />
               <img
                 key={image1[2].id}
@@ -278,18 +291,18 @@ const PertanianBerkelanjutan = () => {
                 key={image1[3].id}
                 src={image1[3].src}
                 alt=""
-                className={`${image1[3].classname} col-span-2`}
+                className={`${image1[3].classname} col-span-2 md:mt-4 lg:mt-0`}
               />
             </div>
             <img
               key={image1[4].id}
               src={image1[4].src}
               alt=""
-              className={`${image1[4].classname}`}
+              className={`${image1[4].classname} md:justify-self-start lg:justify-self-end md:-ml-8`}
             />
           </div>
         </div>
-        <div className="w-full px-5 lg:px-20 pt-10">
+        <div className="w-full px-5 md:px-12 lg:px-20 pt-10">
           <NumberedList2
             content={[
               {
@@ -307,42 +320,42 @@ const PertanianBerkelanjutan = () => {
             highlight={2}
             classname={""}
           />
-          <div className="grid grid-cols-3 gap-2 lg:gap-7 mt-5">
-            <div className="grid grid-cols-2 gap-2 lg:gap-7">
+          <div className="grid grid-cols-3 gap-2 lg:gap-7 mt-5 justify-items-center md:pl-10">
+            <div className="grid grid-cols-2 gap-2 lg:gap-7 justify-self-end">
               <img
                 key={image2[1].id}
                 src={image2[1].src}
                 alt=""
-                className={`${image2[1].classname}`}
+                className={`${image2[1].classname} md:mr-4`}
               />
               <img
                 key={image2[2].id}
                 src={image2[2].src}
                 alt=""
-                className={`${image2[2].classname}`}
+                className={`${image2[2].classname} `}
               />
               <img
                 key={image2[3].id}
                 src={image2[3].src}
                 alt=""
-                className={`${image2[3].classname} col-span-2`}
+                className={`${image2[3].classname}  col-span-2 md:mt-4 lg:mt-0`}
               />
             </div>
             <img
               key={image2[0].id}
               src={image2[0].src}
               alt=""
-              className={`${image2[0].classname}`}
+              className={`${image2[0].classname} md:mr-20 lg:mr-0`}
             />
             <img
               key={image2[4].id}
               src={image2[4].src}
               alt=""
-              className={`${image2[4].classname}`}
+              className={`${image2[4].classname} md:justify-self-start lg:justify-self-end md:-ml-12`}
             />
           </div>
         </div>
-        <div className="w-full px-5 lg:px-20 pt-10">
+        <div className="w-full px-5 md:px-12 lg:px-20 pt-10">
           <NumberedList2
             content={[
               {
@@ -363,7 +376,7 @@ const PertanianBerkelanjutan = () => {
         </div>
       </section>
       <section className="pt-8">
-        <div className="px-5 lg:pl-20">
+        <div className="px-5 md:px-12 lg:pl-20">
           <HeadSection2
             width="lg:w-[790px] font-semibold text-start"
             content={[{ title: "Praktek", classname: "", highlight: true }]}
@@ -381,17 +394,17 @@ const PertanianBerkelanjutan = () => {
             highlight={2}
             classname={""}
           />
-          <Table />
+          <Table tableData={tableData}/>
         </div>
       </section>
       <section className="py-8 ">
-        <div className="px-5 lg:pl-20">
+        <div className="px-5 md:px-12 lg:pl-20">
           <HeadSection2
-            width="lg:w-[790px] font-semibold text-start"
+            width="w-[736px] lg:w-[790px] font-semibold text-start"
             content={[{ title: "Kriteria", classname: "", highlight: true }]}
           />
           <div className="flex flex-col gap-6 lg:flex-row">
-            <div className="w-[736px]">
+            <div className="">
               <HeadSection2
                 classname="text-sm lg:text-2xl mb-2 mt-3"
                 width=" font-semibold text-start"
@@ -403,11 +416,11 @@ const PertanianBerkelanjutan = () => {
                   },
                 ]}
               />
-              <div>
+              <div className="">
                 <NumberedList
                   header={true}
                   content={kriteria}
-                  size="lg:min-w-12 lg:min-h-12 lg:max-w-12 lg:max-h-12 lg:text-2xl lg:me-5"
+                  size="lg:min-w-12 lg:min-h-12 lg:max-w-12 lg:max-h-12 lg:text-2xl lg:mr-5"
                 />
               </div>
             </div>
@@ -434,7 +447,7 @@ const PertanianBerkelanjutan = () => {
           />
         </div>
         <div className="lg:flex lg:flex-row-reverse lg:justify-between lg:pt-10">
-          <div className="px-5 lg:px-0 lg:pr-16 lg:w-[952px]">
+          <div className="px-5 md:px-12 lg:px-0 lg:pr-16 lg:w-[952px]">
             <Paragraph
               text={
                 "Pelaksanaan pembangunan pertanian berkelanjutan masih menghadapi berbagai tantangan menurut Dahuri, R. (2020) yaitu:"
@@ -463,31 +476,9 @@ const PertanianBerkelanjutan = () => {
       </section>
       <div className="relative">
         <img src="images/footer-shape.png" alt="" className="-z-20 absolute -bottom-20 md:hidden" />
-        <img src="images/footer-shape2.png" alt="" className="-z-20 absolute -bottom-52 hidden lg:block" />
+        <img src="images/footer-shape3.png" alt="" className="-z-20 absolute -bottom-12 hidden md:block" />
       </div>
-      <footer className="bg-primary text-white flex flex-col justify-center items-center pt-6">
-        <div className="flex flex-row gap-1 items-end">
-          <img
-            src="images/logo-sma.png"
-            alt=""
-            className="h-[23px] w-[23px] lg:h-[35px] lg:w-[35px]"
-          />
-          <h2 className="text-sm lg:text-xl text-white font-semibold border-b-[1px] border-white">
-            EduTaniMas
-          </h2>
-        </div>
-        {/* <div className="flex flex-row items-baseline w-[276px] text-[10px] text-center"> */}
-          <p className="flex flex-row justify-center items-baseline text-[10px] text-center px-10 pt-2">
-            <span>
-              <img src="svg/location.svg" alt="" className="w-4"/>
-            </span>
-            Jalan Wibisono, Gang II/No 3, Bringin, Semarang, Kabupaten Semarang,
-            Jawa Tengah (50772)
-          </p>
-        {/* </div> */}
-        <p className="text-[10px] text-center px-4 py-2">Email : wahyufauziyah2000@gmail.com | Whatsapp : 085876574032</p>
-        <div className="w-full h-9 bg-[#043A3A]/30 rounded-t-lg"></div>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 };
