@@ -13,10 +13,37 @@ import { DataVideoPertanianPisang } from "../utils/DataVideoPertanianPisang";
 import { DataPangan } from "../utils/DataPangan";
 import { DataBuah } from "../utils/DataBuah";
 import Footer from "../components/Fragments/Footer";
+import { Helmet } from "react-helmet";
 
 const PotensiPertanian = () => {
   return (
     <div className="font-mulish min-h-screen flex flex-col scrollbar-thin-4px scrollbar-thumb-gray-400">
+      <Helmet>
+        <title>Potensi Pertanian - EduTaniMas</title>
+        <meta
+          name="description"
+          content="Potensi Hasil Pertanian di Kecamatan Bringin disajikan dalam tabel di bawah ini."
+        />
+        <meta
+          name="keywords"
+          content="edutanimas, pertanian, pertanian berkelanjutan, edukasi pertanian, pembangunan pertanian, smansabri, sekolah, platform p5"
+        />
+        <link
+          rel="canonical"
+          href="https://edutanimas.vercel.app/potensi-pertanian"
+        />
+        <meta
+          property="og:title"
+          content="EduTaniMas - Edukasi Pertanian Masuk Sekolah"
+        />
+        <meta
+          property="og:description"
+          content="Tani Mas merupakan kegiatan budidaya pertanian yang dilaksanakan oleh siswa dan guru di lingkungan sekolah sebagai salah satu program unggulan 100 hari kerja Menteri Pertanian RI. Program Tani Mas meningkatkan pengetahuan siswa terhadap budidaya pertanian dan menumbuhkan semangat siswa menjadi agripreneur serta meningkatkan ketersediaan dan akses pangan"
+        />
+        <meta property="og:image" content="images/home-page.jpg" />
+        <meta property="og:url" content="https://edutanimas.vercel.app/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
       <main className="w-full mt-[70px] mb-5 md:relative lg:mt-[60px] overflow-hidden">
         <img

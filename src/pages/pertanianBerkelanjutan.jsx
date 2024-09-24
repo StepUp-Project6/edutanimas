@@ -14,45 +14,72 @@ import Logo from "../components/Elements/Logo";
 import Table from "../components/Fragments/Table";
 import { tableData } from "../utils/DataTable";
 import Footer from "../components/Fragments/Footer";
+import { Helmet } from "react-helmet";
 
 const PertanianBerkelanjutan = () => {
   return (
     <div className="no-scrollbar md:scrollbar-visible overflow-x-hidden min-h-screen flex flex-col">
+      <Helmet>
+        <title>Pertanian Berkelanjutan | EduTaniMas</title>
+        <meta
+          name="description"
+          content="Pertanian berkelanjutan adalah usaha pertanian yang memanfaatkan  sekaligus melestarikan sumber daya secara optimal untuk menghasilkan  produk panen secara optimal, menggunakan masukan sarana dan biaya yang  wajar, sanggup memenuhi kriteria sosial, ekonomi, kelestarian  lingkungan, dan menggunakan sarana produksi yang terbarukan serta  menghasilkan produktivitas sumber daya sepanjang masa."
+        />
+        <meta
+          name="keywords"
+          content="edutanimas, pertanian, pertanian berkelanjutan, edukasi pertanian, pembangunan pertanian, smansabri, sekolah, platform p5"
+        />
+        <link
+          rel="canonical"
+          href="https://edutanimas.vercel.app/pertanian-berkelanjutan"
+        />
+        <meta
+          property="og:title"
+          content="EduTaniMas - Edukasi Pertanian Masuk Sekolah"
+        />
+        <meta
+          property="og:description"
+          content="Tani Mas merupakan kegiatan budidaya pertanian yang dilaksanakan oleh siswa dan guru di lingkungan sekolah sebagai salah satu program unggulan 100 hari kerja Menteri Pertanian RI. Program Tani Mas meningkatkan pengetahuan siswa terhadap budidaya pertanian dan menumbuhkan semangat siswa menjadi agripreneur serta meningkatkan ketersediaan dan akses pangan"
+        />
+        <meta property="og:image" content="images/home-page.jpg" />
+        <meta property="og:url" content="https://edutanimas.vercel.app/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
       <section className="relative mt-16 lg:mt-40 w-full h-[550px] md:h-[420px] lg:h-[730px] overflow-x-hidden ">
         <SectionImage
-        images={[
-          {
-            src: "images/floated/floated-1.png",
-            position:
-              "top-32 left-0 md:top-0 md:-left-9 md:mt-[-30px] lg:top-0 lg:-left-4 lg:mt-[-30px] xl:top-0 xl:-left-20 xl:mt-[-70px]",
-            size: "w-[122px] h-[132px] lg:w-[160px] lg:h-[200px] xl:w-[200px] xl:h-[230px]",
-          },
-          {
-            src: "images/floated/floated-2.png",
-            position:
-              "top-80 left-8 md:top-[110px] md:left-40 lg:top-72 lg:left-60",
-            size: "w-[91px] h-[95px] lg:w-[131px] md:h-[127px] xl:w-[141px] xl:h-[137px]",
-          },
-          {
-            src: "images/floated/floated-3.png",
-            position:
-              "top-96 left-40 md:ml-[300px] md:top-40 lg:ml-[450px] lg:top-[350px] xl:ml-[700px] xl:top-[400px]",
-            size: "w-[82px] h-[80px] lg:w-[120px] lg:h-[122px] xl:w-[126px] xl:h-[132px]",
-          },
-          {
-            src: "images/floated/floated-4.png",
-            position:
-              "top-48 right-[56px] md:right-7 md:top-[60px] lg:right-[-30px] lg:top-[140px] xl:right-7 xl:top-32",
-            size: "w-[128px] h-[140px] lg:w-[222px] lg:h-[221px]",
-          },
-          {
-            src: "images/floated/floated-5.png",
-            position:
-              "top-40 right-32 -z-10 md:top-[30px] md:right-[120px] lg:top-[40px] lg:right-[100px] xl:top-[30px] xl:right-48",
-            size: "w-[65px] h-[59px] lg:w-[110px] lg:h-[110px] xl:w-[130px] xl:h-[130px]",
-          },
-        ]}
+          images={[
+            {
+              src: "images/floated/floated-1.png",
+              position:
+                "top-32 left-0 md:top-0 md:-left-9 md:mt-[-30px] lg:top-0 lg:-left-4 lg:mt-[-30px] xl:top-0 xl:-left-20 xl:mt-[-70px]",
+              size: "w-[122px] h-[132px] lg:w-[160px] lg:h-[200px] xl:w-[200px] xl:h-[230px]",
+            },
+            {
+              src: "images/floated/floated-2.png",
+              position:
+                "top-80 left-8 md:top-[110px] md:left-40 lg:top-72 lg:left-60",
+              size: "w-[91px] h-[95px] lg:w-[131px] md:h-[127px] xl:w-[141px] xl:h-[137px]",
+            },
+            {
+              src: "images/floated/floated-3.png",
+              position:
+                "top-96 left-40 md:ml-[300px] md:top-40 lg:ml-[450px] lg:top-[350px] xl:ml-[700px] xl:top-[400px]",
+              size: "w-[82px] h-[80px] lg:w-[120px] lg:h-[122px] xl:w-[126px] xl:h-[132px]",
+            },
+            {
+              src: "images/floated/floated-4.png",
+              position:
+                "top-48 right-[56px] md:right-7 md:top-[60px] lg:right-[-30px] lg:top-[140px] xl:right-7 xl:top-32",
+              size: "w-[128px] h-[140px] lg:w-[222px] lg:h-[221px]",
+            },
+            {
+              src: "images/floated/floated-5.png",
+              position:
+                "top-40 right-32 -z-10 md:top-[30px] md:right-[120px] lg:top-[40px] lg:right-[100px] xl:top-[30px] xl:right-48",
+              size: "w-[65px] h-[59px] lg:w-[110px] lg:h-[110px] xl:w-[130px] xl:h-[130px]",
+            },
+          ]}
         />
         <div className="flex justify-center">
           <HeadSection
@@ -76,12 +103,20 @@ const PertanianBerkelanjutan = () => {
           </a>
         </div>
         <div>
-          <img src="images/header-shape1.png" alt="" className="-z-20 absolute -bottom-0 w-full md:-bottom-20 xl:-bottom-40"/>
+          <img
+            src="images/header-shape1.png"
+            alt=""
+            className="-z-20 absolute -bottom-0 w-full md:-bottom-20 xl:-bottom-40"
+          />
         </div>
       </section>
       <section className="relative mt-4">
-      <div>
-          <img src="images/header-shape1.1.png" alt="" className="-z-20 absolute -top-4"/>
+        <div>
+          <img
+            src="images/header-shape1.1.png"
+            alt=""
+            className="-z-20 absolute -top-4"
+          />
         </div>
         <div className="pl-5 md:pl-14 lg:pl-20">
           <HeadSection2
@@ -394,7 +429,7 @@ const PertanianBerkelanjutan = () => {
             highlight={2}
             classname={""}
           />
-          <Table tableData={tableData}/>
+          <Table tableData={tableData} />
         </div>
       </section>
       <section className="py-8 ">
@@ -475,8 +510,16 @@ const PertanianBerkelanjutan = () => {
         </div>
       </section>
       <div className="relative">
-        <img src="images/footer-shape.png" alt="" className="-z-20 absolute -bottom-20 md:hidden" />
-        <img src="images/footer-shape3.png" alt="" className="-z-20 absolute -bottom-12 hidden md:block" />
+        <img
+          src="images/footer-shape.png"
+          alt=""
+          className="-z-20 absolute -bottom-20 md:hidden"
+        />
+        <img
+          src="images/footer-shape3.png"
+          alt=""
+          className="-z-20 absolute -bottom-12 hidden md:block"
+        />
       </div>
       <Footer></Footer>
     </div>

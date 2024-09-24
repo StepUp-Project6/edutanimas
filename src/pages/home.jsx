@@ -4,6 +4,7 @@ import InfoCard from "../components/Elements/InfoCard";
 import SectionImage from "../components/Layouts/SectionImage";
 import Card from "../components/Elements/Card";
 import Footer from "../components/Fragments/Footer";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const items = [
@@ -25,6 +26,32 @@ const Home = () => {
   ];
   return (
     <div className="min-h-screen flex flex-col relative">
+      <Helmet>
+        <title>Beranda | EduTaniMas</title>
+        <meta
+          name="description"
+          content="Tani Mas merupakan kegiatan budidaya pertanian yang dilaksanakan oleh siswa dan guru di lingkungan sekolah sebagai salah satu program unggulan 100 hari kerja Menteri Pertanian RI. Program Tani Mas meningkatkan pengetahuan siswa terhadap budidaya pertanian dan menumbuhkan semangat siswa menjadi agripreneur serta meningkatkan ketersediaan dan akses pangan."
+        />
+        <meta
+          name="keywords"
+          content="edutanimas, pertanian, pertanian berkelanjutan, edukasi pertanian, pembangunan pertanian, smansabri, sekolah, platform p5"
+        />
+        <link
+          rel="canonical"
+          href="https://edutanimas.vercel.app/"
+        />
+        <meta
+          property="og:title"
+          content="EduTaniMas - Edukasi Pertanian Masuk Sekolah"
+        />
+        <meta
+          property="og:description"
+          content="Tani Mas merupakan kegiatan budidaya pertanian yang dilaksanakan oleh siswa dan guru di lingkungan sekolah sebagai salah satu program unggulan 100 hari kerja Menteri Pertanian RI. Program Tani Mas meningkatkan pengetahuan siswa terhadap budidaya pertanian dan menumbuhkan semangat siswa menjadi agripreneur serta meningkatkan ketersediaan dan akses pangan."
+        />
+        <meta property="og:image" content="images/home-page.jpg" />
+        <meta property="og:url" content="https://edutanimas.vercel.app/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
       <img
         src="images/element-bg-7.png"
