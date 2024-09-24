@@ -46,37 +46,37 @@ const Home = () => {
         alt="bg"
         className="hidden absolute md:top-[750px] lg:top-[850px] w-full -z-50 md:block"
       />
-      <section className="mt-16 w-full relative h-[550px] md:mt-[80px] md:h-[160px] lg:mt-[80px] lg:h-[270px] xl:mt-[176px] xl:h-[300px]">
+      <section className="mt-16 w-full relative h-[550px] md:mt-0 md:h-[160px]  lg:h-[600px] xl:h-[600px] md:pb-[300px] md:pt-[80px] lg:pt-[100px] md:overflow-hidden">
         <SectionImage
           images={[
             {
               src: "images/home/home-1.png",
               position:
-                "top-32 left-0 md:top-0 md:-left-9 md:mt-[-30px] lg:top-0 lg:-left-4 lg:mt-[-30px] xl:top-0 xl:-left-20 xl:mt-[-70px]",
+                "top-32 left-0 md:top-[85px] md:-left-9 md:mt-[-30px] lg:top-[110px] lg:-left-8 lg:mt-[-30px] xl:top-[140px] xl:-left-20 xl:mt-[-70px]",
               size: "w-[122px] h-[132px] lg:w-[160px] lg:h-[200px] xl:w-[200px] xl:h-[230px]",
             },
             {
               src: "images/home/home-2.png",
               position:
-                "top-80 left-8 md:top-[110px] md:left-40 lg:top-72 lg:left-60",
+                "top-80 left-8 md:top-[195px] md:left-40 lg:top-[340px] lg:left-60",
               size: "w-[91px] h-[95px] lg:w-[131px] md:h-[127px] xl:w-[141px] xl:h-[137px]",
             },
             {
               src: "images/home/home-5.png",
               position:
-                "top-96 left-40 md:ml-[300px] md:top-40 lg:ml-[450px] lg:top-[350px] xl:ml-[700px] xl:top-[400px]",
+                "top-96 left-40 md:ml-[300px] md:top-[270px] lg:ml-[450px] lg:top-[430px] xl:ml-[700px] xl:top-[400px]",
               size: "w-[82px] h-[80px] lg:w-[120px] lg:h-[122px] xl:w-[126px] xl:h-[132px]",
             },
             {
               src: "images/home/home-4.png",
               position:
-                "top-48 right-[56px] md:right-7 md:top-[60px] lg:right-[-30px] lg:top-[140px] xl:right-7 xl:top-32",
+                "top-48 right-[56px] md:right-7 md:top-[145px] lg:right-[-30px] lg:top-[230px] xl:right-7 xl:top-[220px]",
               size: "w-[128px] h-[140px] lg:w-[222px] lg:h-[221px]",
             },
             {
               src: "images/home/home-3.png",
               position:
-                "top-40 right-32 -z-10 md:top-[30px] md:right-[120px] lg:top-[40px] lg:right-[100px] xl:top-[30px] xl:right-48",
+                "top-40 right-32 -z-10 md:top-[115px] md:right-[120px] lg:top-[140px] lg:right-[100px] xl:top-[120px] xl:right-44",
               size: "w-[65px] h-[59px] lg:w-[110px] lg:h-[110px] xl:w-[130px] xl:h-[130px]",
             },
           ]}
@@ -103,11 +103,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center absolute bottom-0 inset-x-0 ">
+        <div className="flex justify-center items-center inset-x-0 mt-[440px] md:mt-[20px] lg:mt-[30px]">
           <a
             href=""
             target="_blank"
-            className="btn bg-primary text-xs text-center py-3 px-6 text-white font-bold rounded-[10px] xl:w-[168px] xl:h-[47px] xl:font-semibold xl:text-[18px]"
+            className="btnb bg-[#218225] text-xs text-center py-3 px-8 text-white font-bold rounded-[10px] xl:w-[168px] xl:h-[44px] xl:font-semibold xl:text-[18px]"
           >
             Get Started
           </a>
@@ -115,7 +115,7 @@ const Home = () => {
       </section>
 
       {/* Petani Indonesia */}
-      <section className="mt-[60px] md:mt-[200px] lg:mt-[300px] xl:mt-[350px] ml-[20px] mr-[20px] md:ml-[40px] md:mr-[40px] lg:ml-[70px] lg:mr-[70px] xl:ml-[70px] xl:mr-[70px] ">
+      <section className="mt-[60px] md:mt-[150px] lg:mt-[200px] xl:mt-[150px] ml-[20px] mr-[20px] md:ml-[40px] md:mr-[40px] lg:ml-[70px] lg:mr-[70px] xl:ml-[70px] xl:mr-[70px] ">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start lg:gap-x-[120px]">
           {/* Bagian Kiri: Judul dan Teks */}
           <div className="md:w-[60%] lg:w-[70%]">
