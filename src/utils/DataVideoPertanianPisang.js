@@ -9,6 +9,6 @@ export const DataVideoPertanianPisang = [
     id: 2,
     title: "Budidaya pisang cavendish modern",
     image: "images/imageVideo/pertanian-pisang-2.png",
-    link: "https://youtu.be/g5Snnpgafec?si=EfyYOuYPe2CXkjx8",
+    link: "https://youtu.be/DFBY51pwyGY?si=NvBmCEtAs3LOx7o8",
   },
 ];
