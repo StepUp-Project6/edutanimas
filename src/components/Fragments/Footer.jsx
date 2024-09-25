@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white flex flex-col justify-center items-center pt-6">
+    <footer className="bg-primary text-white font-mulish flex flex-col justify-center items-center pt-6">
       <div className="flex flex-row gap-1 items-end">
         <img
           src="images/logo-sma.png"
