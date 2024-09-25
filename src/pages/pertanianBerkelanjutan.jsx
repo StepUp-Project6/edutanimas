@@ -46,13 +46,13 @@ const PertanianBerkelanjutan = () => {
         <meta property="og:type" content="website" />
       </Helmet>
       <Navbar />
-      <section className="relative mt-16 lg:mt-40 w-full h-[550px] md:h-[420px] lg:h-[730px] overflow-x-hidden ">
+      <section className="relative mt-12 md:mt-20 lg:mt-24 w-full h-[550px] md:h-[420px] lg:h-[730px] overflow-hidden ">
         <SectionImage
           images={[
             {
               src: "images/floated/floated-1.png",
               position:
-                "top-32 left-0 md:top-0 md:-left-9 md:mt-[-30px] lg:top-0 lg:-left-4 lg:mt-[-30px] xl:top-0 xl:-left-20 xl:mt-[-70px]",
+                "top-32 left-0 md:top-0 md:-left-9 lg:top-0 lg:-left-4  xl:top-0 xl:-left-20",
               size: "w-[122px] h-[132px] lg:w-[160px] lg:h-[200px] xl:w-[200px] xl:h-[230px]",
             },
             {
