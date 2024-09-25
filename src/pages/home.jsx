@@ -126,7 +126,7 @@ const Home = () => {
               <HeadSection content={[{ title: "Petani di " }, { title: "Indonesia", classname: "text-primary" }]} />
             </div>
             <TextParagraph
-              customClassname={"mt-[10px] text-justify text-xs font-mulish text-gray-600 md:text-[14px] lg:text-[16px] xl:text-[18px]"}
+              customClassname={"mt-[10px] text-justify leading-5 md:leading-7 text-xs font-mulish text-gray-600 md:text-[14px] lg:text-[16px] xl:text-[18px]"}
               content=" Minat generasi muda menggeluti bidang pertanian masih sangat
               rendah. Hal ini dibuktikan dengan data petani di Indonesia saat
               ini berjumlah 33,1 juta orang yang terdiri dari petani kolonial
@@ -134,7 +134,7 @@ const Home = () => {
               (sumber: Statistik Ketenagakerjaan)."
             />
             <TextParagraph
-              customClassname={"mt-[10px] text-justify text-xs font-mulish text-gray-600 md:text-[14px] lg:text-[16px] xl:text-[18px]"}
+              customClassname={"mt-[10px] text-justify leading-5 md:leading-7 text-xs font-mulish text-gray-600 md:text-[14px] lg:text-[16px] xl:text-[18px]"}
               content="Kementerian Pertanian RI memiliki program yang bertujuan
               meningkatkan minat generasi muda untuk menggeluti bidang pertanian
               yaitu Pertanian Masuk Sekolah (Tani Mas)."
@@ -158,7 +158,7 @@ const Home = () => {
             </div>
             <div>
               <TextParagraph
-                customClassname={"mt-[10px] text-justify text-xs font-mulish text-gray-600 md:text-[14px] lg:text-[16px] xl:text-[18px]"}
+                customClassname={"mt-[10px] text-justify leading-5 md:leading-7 text-xs font-mulish text-gray-600 md:text-[14px] lg:text-[16px] xl:text-[18px]"}
                 content="Tani Mas merupakan kegiatan budidaya pertanian yang dilaksanakan
                 oleh siswa dan guru di lingkungan sekolah sebagai salah satu
                 program unggulan 100 hari kerja Menteri Pertanian RI. Program

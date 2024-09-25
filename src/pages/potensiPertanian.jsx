@@ -10,6 +10,7 @@ import Pagination from "../components/Fragments/Pagination";
 import { DataVideoPertanianCabai } from "../utils/DataVideoPertanianCabai";
 import { DataVideoPertanianPadi } from "../utils/DataVideoPertanianPadi";
 import { DataVideoPertanianPisang } from "../utils/DataVideoPertanianPisang";
+import { DataVideoEkonomiHasilPertanian } from "../utils/DataVideoEkonomiHasilPertanian";
 import { DataPangan } from "../utils/DataPangan";
 import { DataBuah } from "../utils/DataBuah";
 import Footer from "../components/Fragments/Footer";
@@ -375,6 +376,36 @@ const PotensiPertanian = () => {
           <div className="w-full px-5 mt-7 md:w-[710px] md:ps-8 md:mx-auto md:overflow-auto lg:w-[970px] xl:w-[1300px]">
             <Pagination
               data={DataVideoPertanianPisang}
+              CardComponent={CardVideo}
+            />
+          </div>
+        </section>
+
+        {/* SECTION VIDEO EKONOMI HASIL PERTANIAN */}
+        <section className="relative w-full pt-0 mt-7">
+          <h2 className="px-24 text-center leading-[16px] mb-5">
+            <HeadSection
+              content={[
+                {
+                  title: "",
+                  className: "font-semibold text-[14px]",
+                },
+                {
+                  title: "Video Berkelanjutan ",
+                  classname:
+                    "font-semibold text-[14px] text-blackmd:text-[20px] lg:text-[32px]",
+                },
+                {
+                  title: "Ekonomi Hasil Pertanian ",
+                  classname:
+                    "text-primary font-semibold text-[14px] d:text-[20px] lg:text-[32px] md:top-0",
+                },
+              ]}
+            />
+          </h2>
+          <div className="w-full px-5 mt-7 md:w-[710px] md:ps-8 md:mx-auto md:overflow-auto lg:w-[970px] xl:w-[1300px]">
+            <Pagination
+              data={DataVideoEkonomiHasilPertanian}
               CardComponent={CardVideo}
             />
           </div>
