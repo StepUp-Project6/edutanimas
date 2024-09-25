@@ -11,7 +11,7 @@ export const DataVideoPertanianCabai = [
     title:
       "Good Agricultural Practices: Chili Cultivation (Budidaya Cabai yang baik dan benar)",
     image: "images/imageVideo/pertanian-cabai-2.png",
-    link: "https://youtu.be/gBGs_G6jgIQ?si=mtnjIl58Ju-YEXhw",
+    link: "https://youtu.be/_kyfmonFQLw?si=ZOtNci3XCUWeJ-oR",
   },
   {
     id: 3,
