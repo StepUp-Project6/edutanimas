@@ -6,6 +6,7 @@ import Card from "../components/Elements/Card";
 import Footer from "../components/Fragments/Footer";
 import { Helmet } from "react-helmet";
 import TextParagraph from "../components/Elements/TextParagraph";
+import {Link as LinkScroll} from "react-scroll"
 
 const Home = () => {
   const items = [
@@ -107,11 +108,13 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center inset-x-0 mt-[440px] md:mt-[20px] lg:mt-[30px]">
-          <a href="#target-section" target="" className="btnb bg-[#218225] text-xs text-center py-3 px-8 text-white font-bold rounded-[10px] xl:w-[168px] xl:h-[44px] xl:font-semibold xl:text-[18px]">
-            Get Started
-          </a>
-        </div>
+        <LinkScroll to="target-section" spy={true} smooth={true} offset={-50} duration={500}>
+          <div className="flex cursor-pointer justify-center items-center inset-x-0 mt-[440px] md:mt-[20px] lg:mt-[30px]">
+            <p className="btnb bg-[#218225] text-xs text-center py-3 px-8 text-white font-bold rounded-[10px] xl:w-[168px] xl:h-[44px] xl:font-semibold xl:text-[18px]">
+              Get Started
+            </p>
+          </div>
+        </LinkScroll>
       </section>
 
       {/* Petani Indonesia */}

@@ -15,6 +15,7 @@ import Table from "../components/Fragments/Table";
 import { tableData } from "../utils/DataTable";
 import Footer from "../components/Fragments/Footer";
 import { Helmet } from "react-helmet";
+import { Link as LinkScroll } from "react-scroll";
 
 const PertanianBerkelanjutan = () => {
   return (
@@ -94,14 +95,19 @@ const PertanianBerkelanjutan = () => {
             ]}
           />
         </div>
-        <div className="absolute inset-x-0 bottom-10 md:bottom-[60%] flex justify-center items-center">
-          <a
-            href=""
-            className="text-xs lg:text-lg font-semibold bg-[#218225] text-white px-8 py-3 rounded-[10px] font-mulish"
-          >
-            Get Started
-          </a>
-        </div>
+        <LinkScroll
+          to="definisi"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+        >
+          <div className="absolute cursor-pointer inset-x-0 bottom-10 md:bottom-[60%] flex justify-center items-center">
+            <p className="text-xs lg:text-lg font-semibold bg-[#218225] text-white px-8 py-3 rounded-[10px] font-mulish">
+              Get Started
+            </p>
+          </div>
+        </LinkScroll>
         <div>
           <img
             src="images/header-shape1.png"
@@ -110,7 +116,7 @@ const PertanianBerkelanjutan = () => {
           />
         </div>
       </section>
-      <section className="relative mt-4">
+      <section className="relative mt-4" id="definisi">
         <div>
           <img
             src="images/header-shape1.1.png"
