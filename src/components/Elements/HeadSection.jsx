@@ -4,7 +4,7 @@ const HeadSection = ({ content = [], classname = "", width = "" }) => {
   return (
     <h1
       className={`text-black font-bricolage ${width} ${
-        classname ? classname : "text-[24px] md:text-[36px] lg:text-[64px]"
+        classname ? classname : "text-[24px] md:text-[36px] lg:text-[42px] xl:text-[64px]"
       }`}
     >
       <span>
