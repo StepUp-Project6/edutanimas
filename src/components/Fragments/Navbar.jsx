@@ -28,7 +28,7 @@ const menu = [
     name: "Platform P5",
     path: "/platform-p5",
     active: false,
-    icon: "svg/nav-pp.svg",
+    icon: "svg/nav-pp5.svg",
   },
 ];
 
@@ -92,14 +92,14 @@ const SideBar = ({ isMenuOpen }) => {
         <h3 className="text-sm font-bold text-[#8391A1] mb-5 mt-7">
           MENU UTAMA
         </h3>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 ">
           {menu.map((item) => (
             <Link
               to={item.path}
               key={item.name}
               className="flex items-center py-3"
             >
-              <img src={item.icon} alt="" className="px-5" />
+              <img src={item.icon} alt="" className="px-5 text-black" />
               <p className="text-base font-semibold">{item.name}</p>
             </Link>
           ))}
