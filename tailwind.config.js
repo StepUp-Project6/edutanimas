@@ -12,6 +12,11 @@ export default {
         secondary: "#043A3A",
         pale: "#525252",
       },
+      screens: {
+        "hp360": "360px",
+        "hp375": "375px", 
+        "hp425": "425px",
+      },
     },
   },
   plugins: [],

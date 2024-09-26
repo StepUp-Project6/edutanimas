@@ -195,7 +195,7 @@ const Home = () => {
         {/* Layout grid untuk item Card */}
         <div className="mt-[22px] grid grid-cols-1 gap-[10px] md:grid-cols-2 md:gap-x-[40px] md:gap-y-[20px] md:mt-[30px] lg:mt-[36px] lg:gap-x-[120px]   xl:mt-[36px] xl:gap-x-[40px] xl:gap-y-[30px] xl:mr-[-30px]">
           <Card imageSrc="/images/card/card-1.png" title="Lokasi Sekolah" description="Sekolah berlokasi di Ibukota Provinsi atau di Kabupaten/Kota terdekat dengan Ibukota provinsi" />
-          <Card imageSrc="/images/card/card-2.png" title="Lokasi Sekolah" description="Memiliki lahan / kebun sekolah minimal 500 m2" />
+          <Card imageSrc="/images/card/card-2.png" title="Lahan Sekolah" description="Memiliki lahan / kebun sekolah minimal 500 m2" />
           <Card imageSrc="/images/card/card-3.png" title="Sumber Air" description="Terdapat sumber air untuk budidaya pertanian" />
           <Card imageSrc="/images/card/card-4.png" title="Ekstrakurikuler" description="Diutamakan yang memiliki ekstrakurikuler pertanian" />
           <Card imageSrc="/images/card/card-5.png" title="Dukungan Pihak Sekolah" description="Pihak sekolah (guru dan siswa) proaktif dan bersemangat dalam kegiatan ini" />

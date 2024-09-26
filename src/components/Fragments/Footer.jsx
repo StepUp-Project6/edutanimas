@@ -14,13 +14,15 @@ const Footer = () => {
         </h2>
       </div>
       {/* <div className="flex flex-row items-baseline w-[276px] text-[10px] text-center"> */}
-      <p className="flex flex-row justify-center gap-1 items-baseline md:items-center text-[10px] text-center px-10 pt-2">
-        <span>
+      <div className="relative flex justify-center gap-1 items-baseline md:items-center text-[10px] text-center px-10 pt-2">
+        <div className="absolute top-[11px] left-[30px] hp375:left-[35px] hp375:top-[9px] hp425:top-[11px] md:static">
           <img src="svg/location.svg" alt="" className="w-2" />
-        </span>
-        Jalan Wibisono, Gang II/No 3, Bringin, Semarang, Kabupaten Semarang,
-        Jawa Tengah (50772)
-      </p>
+        </div>
+        <p className="">
+          Jalan Wibisono, Gang II/No 3, Bringin, Semarang, Kabupaten Semarang,
+          Jawa Tengah (50772)
+        </p>
+      </div>
       {/* </div> */}
       <p className="text-[10px] text-center px-4 py-2">
         Email : wahyufauziyah2000@gmail.com | Whatsapp : 085876574032
