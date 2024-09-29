@@ -140,6 +140,11 @@ const PotensiPertanian = () => {
                     classname:
                       "text-primary font-semibold text-[14px] md:text-[14px] md:top-0 lg:text-[20px]",
                   },
+                  {
+                    title: "(Kuintal)",
+                    classname:
+                      "font-semibold text-[14px] text-black md:text-[14px] lg:text-[20px]",
+                  },
                 ]}
               />
             </h2>
@@ -241,6 +246,11 @@ const PotensiPertanian = () => {
                     classname:
                       "text-primary font-semibold text-[14px] md:top-0 md:text-[14px] lg:text-[20px]",
                   },
+                  {
+                    title: "(Kuintal)",
+                    classname:
+                      "font-semibold text-[14px] text-black md:text-[14px] lg:text-[20px]",
+                  },
                 ]}
               />
             </h2>
@@ -341,6 +351,11 @@ const PotensiPertanian = () => {
                     title: "Kecamatan Bringin ",
                     classname:
                       "text-primary font-semibold text-[14px] md:text-[14px] lg:text-[20px] md:top-0",
+                  },
+                  {
+                    title: "(Kuintal)",
+                    classname:
+                      "font-semibold text-[14px] text-black md:text-[14px] lg:text-[20px]",
                   },
                 ]}
               />
