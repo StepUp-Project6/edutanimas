@@ -103,7 +103,7 @@ const PertanianBerkelanjutan = () => {
           duration={500}
         >
           <div className="absolute cursor-pointer inset-x-0 bottom-10 md:bottom-[60%] flex justify-center items-center">
-            <p className="text-xs lg:text-lg font-semibold bg-[#218225] text-white px-8 py-3 rounded-[10px] font-mulish">
+            <p className="bg-[#218225] text-xs text-center py-3 px-8 text-white font-bold rounded-[10px] xl:w-[168px] xl:h-[44px] xl:font-semibold xl:text-[18px] font-mulish">
               Get Started
             </p>
           </div>
