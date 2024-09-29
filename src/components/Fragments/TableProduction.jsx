@@ -16,7 +16,7 @@ const TableProduction = ({ data }) => {
               Jenis Tanaman
             </th>
             <th className="w-[37%] px-2 py-1 lg:py-2 lg:font-semibold text-left">
-              Produksi Tanaman (Kwintal)
+              Produksi Tanaman
             </th>
           </tr>
           <tr className="hidden md:block h-1 bg-[#EAFFF1]">
