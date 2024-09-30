@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Paragraph = ({ text, highlight, classname }) => {
+const Paragraph = ({ text, highlight, classname, kutipan }) => {
   // Memisahkan teks menjadi array kata-kata
   const words = text.split(' ');
 
@@ -9,9 +9,12 @@ const Paragraph = ({ text, highlight, classname }) => {
   const remainingWords = words.slice(highlight).join(' ');
 
   return (
-    <p className={`text-xs lg:text-lg font-mulish leading-normal text-[#525252] text-justify ${classname}`}>
-      <span className="font-bold">{highlightedWords}</span>{' '}
+    <p
+      className={`text-xs lg:text-lg font-mulish leading-normal text-[#525252] text-justify ${classname}`}
+    >
+      <span className="font-bold">{highlightedWords}</span>{" "}
       <span>{remainingWords}</span>
+      <span className="font-semibold">{kutipan}</span>
     </p>
   );
 }
