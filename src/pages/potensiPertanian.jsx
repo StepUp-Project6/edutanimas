@@ -150,12 +150,15 @@ const PotensiPertanian = () => {
             </h2>
             <div className="md:w-full md:px-48 lg:px-52 xl:px-96">
               <TableProduction data={DataHoltikultura} />
+              <p className="text-xs lg:text-base">
+                Sumber: Kecamatan Bringin dalam Angka 2021
+              </p>
             </div>
           </div>
         </section>
 
         {/* SECTION VIDEO BERKELANJUTAN PERTANIAN CABAI */}
-        <section className="relative w-full pt-0 mt-14 md:mt-0 lg:mt-8">
+        <section className="relative w-full pt-0 mt-14 md:mt-0 lg:mt-14">
           <img
             src="images/element-bg-4.png"
             alt="bg"
@@ -256,6 +259,9 @@ const PotensiPertanian = () => {
             </h2>
             <div className="md:w-full md:px-48 lg:px-52 xl:px-96">
               <TableProduction data={DataPangan} />
+              <p className="text-xs lg:text-base">
+                Sumber: Kecamatan Bringin dalam Angka 2021
+              </p>
             </div>
           </div>
         </section>
@@ -362,6 +368,9 @@ const PotensiPertanian = () => {
             </h2>
             <div className="md:w-full md:px-48 lg:px-52 xl:px-96">
               <TableProduction data={DataBuah} />
+              <p className="text-xs lg:text-base">
+                Sumber: Kecamatan Bringin dalam Angka 2021
+              </p>
             </div>
           </div>
         </section>
