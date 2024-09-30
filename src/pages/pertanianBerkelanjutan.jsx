@@ -143,15 +143,17 @@ const PertanianBerkelanjutan = () => {
                 <Paragraph
                   classname={"mb-5"}
                   text={
-                    "Pertanian berkelanjutan adalah usaha pertanian yang memanfaatkan  sekaligus melestarikan sumber daya secara optimal untuk menghasilkan  produk panen secara optimal, menggunakan masukan sarana dan biaya yang  wajar, sanggup memenuhi kriteria sosial, ekonomi, kelestarian  lingkungan, dan menggunakan sarana produksi yang terbarukan serta  menghasilkan produktivitas sumber daya sepanjang masa."
+                    "Pertanian berkelanjutan adalah usaha pertanian yang memanfaatkan  sekaligus melestarikan sumber daya secara optimal untuk menghasilkan  produk panen secara optimal, menggunakan masukan sarana dan biaya yang  wajar, sanggup memenuhi kriteria sosial, ekonomi, kelestarian  lingkungan, dan menggunakan sarana produksi yang terbarukan serta  menghasilkan produktivitas sumber daya sepanjang masa "
                   }
+                  kutipan="(Sumarno, 2018)."
                   highlight={3}
                 />
                 <Paragraph
                   text={
-                    "Komponen  operasional dan tindak lanjut yang perlu dilakukan dalam melaksanakan  pertanian berkelanjutan antara lain yaitu proses produksi yang tepat dan  efisien, tindakan pelestarian/meningkatkan kualitas sumberdaya lahan  dan air, penyediaan panduan teknologi konservasi mutu sumberdaya  pertanian dan lingkungan, penataran penyuluh lapang, penyuluhan kepada  petani, pengadopsian kebijakan tentang pertanian berkelanjutan,  peningkatan kesadaran pentingnya penerapan pertanian berkelanjutan, dan  perlunya Pemerintah merintis penerapan sistem sertifikasi proses  produksi komoditas pertanian."
+                    "Komponen  operasional dan tindak lanjut yang perlu dilakukan dalam melaksanakan  pertanian berkelanjutan antara lain yaitu proses produksi yang tepat dan  efisien, tindakan pelestarian/meningkatkan kualitas sumberdaya lahan  dan air, penyediaan panduan teknologi konservasi mutu sumberdaya  pertanian dan lingkungan, penataran penyuluh lapang, penyuluhan kepada  petani, pengadopsian kebijakan tentang pertanian berkelanjutan,  peningkatan kesadaran pentingnya penerapan pertanian berkelanjutan, dan  perlunya Pemerintah merintis penerapan sistem sertifikasi proses  produksi komoditas pertanian "
                   }
                   highlight={5}
+                  kutipan="(Lagiman, 2020: 369-370)."
                   classname={"mb-5"}
                 />
               </div>
